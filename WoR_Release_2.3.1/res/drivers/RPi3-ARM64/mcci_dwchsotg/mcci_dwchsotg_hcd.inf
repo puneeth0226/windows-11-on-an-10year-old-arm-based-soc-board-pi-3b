@@ -1,0 +1,152 @@
+;*****************************************************************************
+;
+; Name:  mcci_dwchsotg_hcd.inf
+;
+; Function:
+;	Install MCCI DWCHSOTG Host Controller Driver (Non-Commercial) 
+;
+; Copyright (c) 2009-2019 MCCI Corporation
+;
+; MCCI(R) is a registered trademark of MCCI Corporation.
+;
+; NOTICE: This software is licensed, not sold.  Any modification of this
+; inf file to change the reference to an operating system or to change the
+; reference to a device is not permitted unless authorized in writing by
+; MCCI Corporation
+;
+;*****************************************************************************
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=USB
+ClassGuid={36fc9e60-c465-11cf-8056-444553540000}
+Provider=%Provider%
+DriverVer=02/11/2019, 2.22.0.0
+CatalogFile=mcci_dwchsotg_hcd.cat
+
+[SourceDisksNames.x86]
+1=%DiskKey%,"mcci_dwchsotg_hcd.sys",,\i386
+
+[SourceDisksNames.amd64]
+1=%DiskKey%,"mcci_dwchsotg_hcd.sys",,\amd64
+
+[SourceDisksNames.arm]
+1=%DiskKey%,"mcci_dwchsotg_hcd.sys",,\arm
+
+[SourceDisksNames.arm64]
+1=%DiskKey%,"mcci_dwchsotg_hcd.sys",,\arm64
+
+[SourceDisksFiles.x86]
+mcci_dwchsotg_hcd.sys=1
+
+[SourceDisksFiles.amd64]
+mcci_dwchsotg_hcd.sys=1
+
+[SourceDisksFiles.arm]
+mcci_dwchsotg_hcd.sys=1
+
+[SourceDisksFiles.arm64]
+mcci_dwchsotg_hcd.sys=1
+
+[DestinationDirs]
+DefaultDestDir = 12
+
+[ControlFlags]
+ExcludeFromSelect = *
+
+[Manufacturer]
+%MCCI.MFG%=MCCI, ntx86, ntamd64, ntarm, ntarm64
+
+[MCCI.ntamd64]
+%MCCI_Product_1%=MCCI_Product1_Install,ACPI\DWC_OTG
+
+[MCCI.ntarm]
+%MCCI_Product_1%=MCCI_Product1_Install,ACPI\DWC_OTG
+
+[MCCI.ntarm64]
+%MCCI_Product_1%=MCCI_Product1_Install,ACPI\DWC_OTG
+
+[MCCI.ntx86]
+%MCCI_Product_1%=MCCI_Product1_Install,ACPI\DWC_OTG
+
+[MCCI_Product1_Install.AddReg]
+HKR,,DataPumpAutoLpmEnable, 0x10001, 0
+HKR,,DataPumpAutoLpmIdleTime, 0x10001, 0xc350
+HKR,,DataPumpHubAutoSuspendEnable, 0x10001, 0
+HKR,,DataPumpLpmHird, 0x10001, 0x28a
+HKR,,Disable64BitDma, 0x10001, 0x1
+
+[MCCI_Product1_Install.ntamd64]
+CopyFiles=mcci_dwchsotg_hcd.CopyFiles.amd64
+DriverVer=02/11/2019, 2.22.0.0
+AddReg=MCCI_Product1_Install.AddReg
+AddReg=MCCI_Product1_Install_DeviceInterfaceGuids
+AddReg=mcci_dwchsotg_hcd.ProductDeviceInterfaceGuids
+
+[MCCI_Product1_Install.ntamd64.services]
+AddService=mcci_dwchsotg_hcd,0x00000002,mcci_dwchsotg_hcd_service
+
+[MCCI_Product1_Install.ntarm]
+CopyFiles=mcci_dwchsotg_hcd.CopyFiles.arm
+DriverVer=02/11/2019, 2.22.0.0
+AddReg=MCCI_Product1_Install.AddReg
+AddReg=MCCI_Product1_Install_DeviceInterfaceGuids
+AddReg=mcci_dwchsotg_hcd.ProductDeviceInterfaceGuids
+
+[MCCI_Product1_Install.ntarm.services]
+AddService=mcci_dwchsotg_hcd,0x00000002,mcci_dwchsotg_hcd_service
+
+[MCCI_Product1_Install.ntarm64]
+CopyFiles=mcci_dwchsotg_hcd.CopyFiles.arm64
+DriverVer=02/11/2019, 2.22.0.0
+AddReg=MCCI_Product1_Install.AddReg
+AddReg=MCCI_Product1_Install_DeviceInterfaceGuids
+AddReg=mcci_dwchsotg_hcd.ProductDeviceInterfaceGuids
+
+[MCCI_Product1_Install.ntarm64.services]
+AddService=mcci_dwchsotg_hcd,0x00000002,mcci_dwchsotg_hcd_service
+
+[MCCI_Product1_Install.ntx86]
+CopyFiles=mcci_dwchsotg_hcd.CopyFiles.x86
+DriverVer=02/11/2019, 2.22.0.0
+AddReg=MCCI_Product1_Install.AddReg
+AddReg=MCCI_Product1_Install_DeviceInterfaceGuids
+AddReg=mcci_dwchsotg_hcd.ProductDeviceInterfaceGuids
+
+[MCCI_Product1_Install.ntx86.services]
+AddService=mcci_dwchsotg_hcd,0x00000002,mcci_dwchsotg_hcd_service
+
+[MCCI_Product1_Install_DeviceInterfaceGuids]
+HKR,DeviceInterfaces,GUID_DEVINTERFACE_DWCHSOTG_HOST,, "{59C9DD31-1BBF-4800-89CA-25EFC7E01F48}"
+
+[mcci_dwchsotg_hcd.CopyFiles.amd64]
+mcci_dwchsotg_hcd.sys
+
+[mcci_dwchsotg_hcd.CopyFiles.arm]
+mcci_dwchsotg_hcd.sys
+
+[mcci_dwchsotg_hcd.CopyFiles.arm64]
+mcci_dwchsotg_hcd.sys
+
+[mcci_dwchsotg_hcd.CopyFiles.x86]
+mcci_dwchsotg_hcd.sys
+
+[mcci_dwchsotg_hcd.ProductDeviceInterfaceGuids]
+HKR,DeviceInterfaces,GUID_DEVINTERFACE_DWCHSOTG_DRIVERS,, "{44B0BF3C-435E-4869-9CE7-E4DC46E44873}"
+
+[mcci_dwchsotg_hcd_service]
+DisplayName=%mcci_dwchsotg_hcd_ServiceDescription%
+ServiceType=1
+StartType=0
+ErrorControl=1
+ServiceBinary=%12%\mcci_dwchsotg_hcd.sys
+LoadOrderGroup=Base
+
+[Strings]
+DiskKey = "MCCI DWCHSOTG Install Disk"
+MCCI.MFG = "MCCI Corporation"
+MCCI_Product_1 = "MCCI DWCHSOTG USB Host Controller (Non-Commercial)"
+Provider = "MCCI Corporation"
+mcci_dwchsotg_hcd_ServiceDescription = "MCCI DWCHSOTG Service"
+
+;**** end of file ****

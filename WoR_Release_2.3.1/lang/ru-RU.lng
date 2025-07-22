@@ -1,0 +1,171 @@
+﻿[WoR lang file]
+Name=Русский (Russian)
+IsComplete=1
+
+[UpdateNotifyWindow]
+WindowTitle=Обновление
+NewVersionAvailableLabel=Доступна новая версия
+NewVersionAvailableBox={appname} {0} уже доступна! Хотите скачать её сейчас?
+DownloadBtn=Скачать
+CloseBtn=Закрыть
+
+[AboutWindow]
+WindowTitle=О нас
+AppVersionLabel=Версия
+CreditsPage=Благодарность
+ChangelogPage=Изменения
+LicensesPage=Лицензии
+
+[LoggerWindow]
+WindowTitle=Логи
+CopyToClipboardBtn=Копировать
+
+[LicenseAgreementWindow]
+WindowTitle=Лицензионное соглашение
+AcceptBtn=Принять
+DeclineBtn=Отклонить
+
+[General]
+MessageBox.CustomPackageWarn=Выбирая устаревший или несовместимый пакет, вы можете встретить проблемы при установке!{n}{n}Вместо этого рекомендуется использовать самый новый пакет, доступный на сервере.{n}{n}Вы уверены, что хотите продолжить?
+MessageBox.SelectedPackageInvalid.Heading=Выбранный пакет несовместим с вашим устройством.
+MessageBox.SelectedPackageInvalid.Message=Пожалуйста, выберите пакет, собранный для {0}.
+MessageBox.PackageUpdateError.Heading=Последняя версия пакета не может быть скачана!
+MessageBox.PackageUpdateError.Message=Если вы проигнорируете эту ошибку, то установка продолжится с локальной версией, которая может быть устаревшей.
+Message.ExtractingPackageToTemp=Распаковка архива во временную папку...
+Message.DownloadingReqFiles=Загрузка необходимых файлов...
+Label.StorageDrive=Носитель
+Label.DeviceType=Тип устройства
+FilePathTextPlaceholder=Нажмите на кнопку "{0}" либо перетащите файл сюда.
+ServerPackageInfoLabel=Рекомендуется. Потом пакет также может использоваться локально, после того как он будет скачен.
+
+[MessageBox]
+Button.OK=OK
+Button.Cancel=Отменить
+Button.Abort=Прервать
+Button.Retry=Повторить
+Button.Ignore=Игнорировать
+Button.Yes=Да
+Button.No=Нет
+CheckBox.DoNotShowAgain=Не показывать снова
+
+[MessageBox.Common]
+Heading.SomethingWentWrong=Что-то пошло не так...
+Heading.Warning=Внимание!
+
+[MainWindow]
+SendFeedbackBtn=Отправить отзыв
+NextPageBtn=Далее
+BackPageBtn=Назад
+NextPageBtn.Install=Установить
+NextPageBtn.Finish=Завершить
+MessageBox.TaskOngoing.Heading=Вы уверены, что хотите принудительно закрыть приложение?
+MessageBox.TaskOngoing.Message=В данный момент выполняется операция.
+
+[WelcomePage]
+PageTitle=Добро пожаловать!
+WelcomeLabel=Добро пожаловать в {appname}!
+WelcomeMsgTextBox=Этот мастер поможет вам легко установить полную, десктопную версию Windows на ваш Raspberry Pi.{n}{n}Нажмите на кнопку "{0}", чтобы продолжить.
+SelectLangLabel=Выберите ваш язык:
+SelectWizardModeLabel=Режим мастера:
+SelectWizardModeCombo.BasicMode=Показывать только обязательные настройки
+SelectWizardModeCombo.AdvancedMode=Показывать все настройки
+
+[SelectDevicePage]
+PageTitle=Выбор устройства
+SelectDeviceLabel=Выберите устройство
+DisksListCombo.TextEmptyList=Носители не найдены. Нажмите на "{0}", чтобы обновить список
+DisksListCombo.TextNoItemSelected=Нажмите здесь, чтобы выбрать носитель из списка.
+StorageDriveWarningLabel=Внимание! Выбор неверного носителя может привести к нежелательной потере данных.
+Device.ExperimentalSupport=Экспериментально
+Device.SupportedModels=Поддерживаемые модели: {0}
+MessageBox.DiskAtLeast=Выбранный носитель должен иметь хотя бы {0} ГБ свободного места!
+MessageBox.DiskCompressedInstall.Heading=Места на выбранном носителе хватит, чтобы установить сжатый образ.
+MessageBox.DiskCompressedInstall.Message=Быстродействие системы может немного уменьшиться из-за сжатия.
+Message.LoadingDisks=Загрузка драйверов...
+MessageBox.NewBootloaderRequiredWarn=Если вы хотите загружать ваш {0} с USB носителя или использовать GPT таблицу разделов, то загрузчик должен быть обновлен до последней версии.{n}{n}Для подробностей перейдите по данной ссылке: {1}
+
+[SelectImagePage]
+PageTitle=Выбор образа
+SelectImageLabel=Выберите ваш Windows ARM образ
+ImageFileLabel=Файл образа
+WindowsEditionLabel=Редакция Windows
+WorkingBuildsTextBox.MinBuild=Ваше устройство поддерживает Windows {0} версии {1} или новее.
+WorkingBuildsTextBox.AllBuilds=Ваше устройство поддерживает все доступные версии Windows {0}.
+WorkingBuildsTextBox.GetImage=Если у вас пока еще нет образа, вы можете узнать как скачать его на сайте проекта.
+SelectImageIndexCombo.TextEmptyList=Пожалуйста, выберите сначала образ.
+MessageBox.SelectedImageInvalid=Выбранный образ не допустимый!
+MessageBox.SelectedImageUnsupported=Выбранный образ не поддерживается!
+MessageBox.SelectedImageErrorInfo.AllBuilds=Выберите совместимый Windows образ.
+MessageBox.SelectedImageErrorInfo.MinBuild=Пожалуйста, выберите совместимый образ Windows {0} версией {1} или новее.
+MessageBox.SelectedImageMountError.Heading=Образ не может быть примонтирован!
+MessageBox.SelectedImageMountError.Message=Проверьте, что образ может быть примонтирован самой Windows (правый клик -> Подключить) и попробуйте еще раз. Подключение через сетевой диск может не работать.{n}{n}Если ошибка остается, но вы можете примонтировать образ вручную, то вы можете выбрать файл {0} внутри директории {1}.
+MessageBox.NotEnoughSpace.Heading=Недостаточно места на диске, чтобы установить этот образ!
+MessageBox.NotEnoughSpace.Message=Пожалуйста, выберите более вместимый носитель или более компактный образ.
+Message.MountingISO=Монтирование ISO образа...
+Message.UnmountingISO=Размонтирование ISO образ...
+Message.VerifyingImage=Проверка образа...
+
+[SelectDriversPage]
+PageTitle=Выбор драйверов
+SelectDriversLabel=Выберите драйвера
+DriversNoteTextBox=Примечание: драйвера должны быть упакованы в {0} формате.
+LocalDrvPkgRadioBtn=Использовать пакет с локального хранилища
+ServerDrvPkgRadioBtn=Использовать последнюю доступную версию с сервера
+MessageBox.LicenseNotAccepted.Heading=Вы не приняли одно из лицензионных соглашений!
+MessageBox.LicenseNotAccepted.Message=Для использования этого пакета драйверов необходимо принять все соглашения.
+
+[SelectUEFIPage]
+PageTitle=UEFI прошивка
+SelectUEFILabel=Выберите UEFI прошивку
+UEFINoteTextBox=Примечание: UEFI прошивка должна иметь расширение файла {0}.
+LocalUEFIRadioBtn=Использовать прошивку с локального хранилища.
+ServerUEFIRadioBtn=Использовать последнюю доступную прошивку с сервера
+
+[SetupConfigurationPage]
+PageTitle=Конфигурация
+ConfigurationLabel=Конфигурация
+ConfigurationTabControl.MainTabPage=Основные
+InstallOptionsGroup=Опции установки
+PartSchemeLabel=Схема разделов:
+ImgInstallLabel=Установить образ через:
+EnableLZXCheck=Включить LZX сжатие
+BootOptionsGroup=Опции запуска
+MessageBox.BootConfigEditorWarn=Изменение стандартной конфигурации загрузки может привести к сбою или к потере возможности загрузки.{n}{n}Все равно продолжить?
+MessageBox.MbrPartSchemeWarn=MBR схема разделов приведет к невозможности использовать среду восстановления или установки обновлений.{n}{n}Все равно продолжить?
+ConfigurationTabControl.AdvancedTabPage=Расширенные
+MessageBox.AdvancedTabPageWarn=Изменение настроек в расширенном меню может привести к отключению некоторых возможностей устройства или помешать загрузке системы.{n}{n}Вы уверены, что хотите продолжить?
+WindowsBootOptionsGroup=Опции загрузки Windows
+MemoryLimitLabel=Лимит памяти:
+RecoveryEnabledCheck=Включить среду восстановления Windows (Windows RE)
+WoROptionsGroup=Настройки {appname}
+SaveConfigOnExitCheck=Сохранить эту конфигурацию при выходе
+SaveConfigOnExitCheckInfoLabel=Примечание: отключенные опции не будут сохранены.
+
+[SetupOverviewPage]
+PageTitle=Установка
+InstallOverviewLabel=Обзор установки
+InstallWarnBox=ВНИМАНИЕ! Вся информация с вашего носителя будет удалена! Сделайте резервную копию ваших файлов, пока не стало слишком поздно!
+OSLabel=Операционная система
+DriversPathLabel=Путь до драйверов
+UEFIPathLabel=Путь до UEFI прошивки
+PartitionSchemeLabel=Схема разделов
+ImageDeployerLabel=Установщик образа
+LZXCompressionLabel=LZX сжатие
+LZXCompression.YES=ДА
+LZXCompression.NO=НЕТ
+
+[SetupProgressPage]
+PageTitle=Установка
+InstallInfoBox=Этот процесс может занять длительное время, в зависимости от производительности носителя.
+TryAgainBtn=Попробовать снова
+InstallStatusLabel.GettingReady=Подготовка... 
+InstallStatusLabel.FormattingDisk=Форматирование выбранного носителя...
+InstallStatusLabel.CreatingPartitions=Создание разделов... 
+InstallStatusLabel.InstallingWindows=Устанавливается Windows...
+InstallStatusLabel.InstallingBootFiles=Устанавливаются файлы запуска...
+InstallStatusLabel.InstallingDrivers=Устанавливаются драйвера...
+InstallStatusLabel.RunningScript=Выполнение кастомного скрипта...
+InstallStatusLabel.InstallFinished=Установка завершена!
+InstallStatusLabel.InstallFailed=Установка прервана!
+MessageBox.RecoveryNotFoundWarn.Heading=Образ восстановления не может быть найден!
+MessageBox.RecoveryNotFoundWarn.Message=Если вы продолжить, то среда восстановления будет полностью отключена.

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" charset="UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="css/shared.css">
+
+    <style>
+        b {
+            font-weight: normal;
+            font-family: SegoeUIBold;
+            font-size: 10pt;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        ul {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <b>Windows on Raspberry [version 2.3.1] - 03.12.2022</b>
+    <br>
+    <p>- New: avoid selecting WinPE editions by default (as is the case with ESDs from Microsoft) (SkipWinPeEditions=1)</p>
+    <p>- Updated: translations</p>
+    <p>- Fixed: selection of builds newer than 25163 which are not supported</p>
+    <p>- Fixed: website address</p>
+    <p>- Fixed: loading images with one or more unsupported editions results in wrong index being selected</p>
+    <p>- Improved: application logging</p>
+    <br>
+
+    <b>Windows on Raspberry [version 2.3.0] - 22.02.2022</b>
+    <br>
+    <p>- New: basic wizard mode (only the required options are shown by default)</p>
+    <p>- New: run a custom script before the installation is finished</p>
+    <p>- New: more config parameters (skip wizard pages, copy boot package directories)</p>
+    <p>- New: options in the Advanced tab of the Configuration page can be saved</p>
+    <p>- Improved: application logging</p>
+    <br>
+
+    <b>Windows on Raspberry [version 2.2.3] - 06.01.2022</b>
+    <br>
+    <p>- New: Malay translation</p>
+    <p>- Updated: translations</p>
+    <p>- Fixed: missing drive model prevents the disks list from being loaded</p>
+    <p>- Removed: warnings on disk 0</p>
+    <br>
+
+    <b>Windows on Raspberry [version 2.2.2] - 11.07.2021</b>
+    <br>
+    <p>- Fixed: diskpart might fail to convert the boot partition to ESP</p>
+    <br>
+
+    <b>Windows on Raspberry [version 2.2.1] - 04.07.2021</b>
+    <br>
+    <p>- Updated: translations</p>
+    <p>- Fixed: the WinRE image can't be mounted on removable disks</p>
+    <br>
+
+    <b>Windows on Raspberry [version 2.2.0] - 03.07.2021</b>
+    <br>
+    <p>- New: flash the taskbar button and play a system sound when the installation process is finished</p>
+    <p>- New: temporarily disable autorun dialogs ("You need to format the disk...")</p>
+    <p>- Updated: translations</p>
+    <p>- Fixed: bcdboot/bcdedit can't be found on ARM64 builds of Windows with x64 emulation</p>
+    <p>- Fixed: cannot mount the WinRE image if the tool is on a network share or non-NTFS drive</p>
+    <p>- Fixed: the disk is converted to GPT twice if the MSR partition doesn't exist</p>
+    <p>- Removed: support for ARM32</p>
+    <p>- Removed: all references to Windows 10</p>
+    <br>
+
+    <b>Windows on Raspberry [version 2.1.2] - 09.05.2021</b>
+    <br>
+    <p>- New: Finnish translation</p>
+    <p>- Updated: Traditional Chinese translation</p>
+    <p>- Improved: exception handling</p>
+    <p>- Fixed: the unwanted MSR partition may not be deleted in some cases</p>
+    <br>
+
+    <b>Windows on Raspberry [version 2.1.1] - 27.04.2021</b>
+    <br>
+    <p>- Updated: Simplified Chinese translation</p>
+    <p>- Fixed: diskpart may refuse to convert the disk to GPT</p>
+    <br>
+
+    <b>Windows on Raspberry [version 2.1.0] - 26.04.2021</b>
+    <br>
+    <p>- New: support for the Windows Recovery Environment (enabled by default along with GPT)</p>
+    <p>- New: mention Raspberry Pi 400 as a supported target and remove the Experimental flag</p>
+    <p>- Updated: translations</p>
+    <p>- Improved: exception handling</p>
+    <p>- Improved: application logging</p>
+    <p>- Improved: setup progress reporting</p>
+    <p>- Fixed: GPT disks are not being properly partitioned</p>
+    <p>- Fixed: no warning is shown if the local packages couldn't be updated</p>
+    <p>- Fixed: image mounting error message is ambiguous (replaced with a more user-friendly one)</p>
+    <p>- Removed: support for Windows builds older than 19041 on the Raspberry Pi 4 and 18362 on the Raspberry Pi 3 (ARM64)</p>
+    <br>
+
+    <b>Windows on Raspberry [version 2.0.1] - 13.10.2020</b>
+    <br>
+    <p>- Updated: German translation</p>
+    <p>- Updated: Dutch translation</p>
+    <p>- Updated: Polish translation</p>
+    <p>- Updated: Slovak translation</p>
+    <p>- Updated: Serbian translation</p>
+    <p>- Updated: Swedish translation</p>
+    <p>- Updated: Russian translation</p>
+    <p>- Updated: Korean translation</p>
+    <p>- Updated: Japanese translation</p>
+    <p>- Updated: Simplified Chinese translation</p>
+    <p>- Updated: Traditional Chinese translation</p>
+    <p>- Improved: UI elements</p>
+    <p>- Improved: exception handling</p>
+    <p>- Improved: application logging</p>
+    <p>- Fixed: error while loading an image on some versions of Windows</p>
+    <br>
+
+    <b>Windows on Raspberry [version 2.0.0] - 04.09.2020</b>
+    <br>
+    <p>- New: redesigned user interface</p>
+    <p>- New: high-DPI scaling</p>
+    <p>- New: re-enabled GPT support on Raspberry Pi 4</p>
+    <p>- New: additional config parameters (DismPath, MinDiskSizeCompression, MinDiskSizeFullInstall)</p>
+    <p>- New: mention Raspberry Pi 2 rev 1.2 as a supported ARM64 target</p>
+    <p>- Updated: translations</p>
+    <p>- Updated: 3rd party libraries</p>
+    <p>- Improved: UI elements</p>
+    <p>- Improved: locale detection</p>
+    <p>- Improved: exception handling</p>
+    <p>- Improved: language file structure</p>
+    <p>- Improved: application logging (logs are now stored in a separate directory)</p>
+    <p>- Fixed: the partition scheme can be changed on a FFU image</p>
+    <p>- Fixed: installation fails when using GPT-partitioned FFU images</p>
+    <p>- Fixed: disk 0 is hidden (it's not always the main drive)</p>
+    <p>- Fixed: wrong UI size when the OS language is set to Korean</p>
+    <p>- Removed: support for Windows builds older than 17763 on the Raspberry Pi 3 (deprecated UEFI)</p>
+    <p>- Removed: default RAM limit on Raspberry Pi 4</p>
+    <br>
+    <p>- See the pre-releases below for a complete changelog of version 2.0.0</p>
+    <br>
+
+    <b>Windows on Raspberry [version 2.0.0-alpha.3] - 12.05.2020</b>
+    <br>
+    <p>- New: drag and drop support for the required binaries</p>
+    <p>- New: option to enable/disable the Windows Recovery Environment (it's disabled by default now)</p>
+    <p>- New: "reset to defaults" button on the Configuration page</p>
+    <p>- New: warning messages are shown when performing actions that could break the installation or make the device malfunction</p>
+    <p>- New: moved the Memory limit setting to a separate Advanced tab on the Configuration page</p>
+    <p>- Updated: German translation</p>
+    <p>- Updated: Traditional Chinese translation</p>
+    <p>- Updated: Polish translation</p>
+    <p>- Updated: Turkish translation</p>
+    <p>- Improved: language file structure</p>
+    <p>- Fixed: ISO image is not unmounted in some cases</p>
+    <p>- Removed: support for raw UEFI firmware images (only ZIP packages are allowed now)</p>
+    <br>
+
+    <b>Windows on Raspberry [version 2.0.0-alpha.2] - 05.05.2020</b>
+    <br>
+    <p>- New: experimental ARM32 support (Raspberry Pi 2 and 3)</p>
+    <p>- Updated: Polish translation</p>
+    <p>- Fixed: missing translation on the Select Image page</p>
+    <p>- Fixed: FFU metadata parsing bug</p>
+    <p>- Fixed: minor UI bugs</p>
+    <p>- Removed: GPT support for the Pi 4 (until the bootloader will natively support it)</p>
+    <br>
+
+    <b>Windows on Raspberry [version 2.0.0-alpha.1] - 02.05.2020</b>
+    <br>
+    <p>- New: experimental Raspberry Pi 4 support</p>
+    <p>- New: support for the upstream UEFI (available on Windows builds >= 17763)</p>
+    <p>- New: patch the GPT disk using raw disk access (drop dd, etcher_cli, GPT.img)</p>
+    <p>- New: moved the drivers package to Github</p>
+    <p>- Updated: 3rd party libraries</p>
+    <p>- Updated: Italian translation</p>
+    <p>- Updated: Traditional Chinese translation</p>
+    <p>- Updated: Korean translation</p>
+    <p>- Improved: exception handling</p>
+    <p>- Improved: language file structure</p>
+    <p>- Fixed: crash due to unhandled exception in the Process wrapper</p>
+    <p>- Fixed: opening two instances at the same time will break the application</p>
+    <p>- Fixed: minor user interface bugs</p>
+    <br>
+
+    <b>Windows on Raspberry [version 1.5.2] - 01.10.2019</b>
+    <br>
+    <p>- New: Portuguese translation</p>
+    <p>- Updated: Korean translation</p>
+    <p>- Updated: Ukrainian translation</p>
+    <p>- Updated: Simplified Chinese translation</p>
+    <p>- Updated: Hungarian translation</p>
+    <p>- Updated: Czech translation</p>
+    <p>- Fixed: detection of compact FFU images</p>
+    <br>
+
+    <b>Windows on Raspberry [version 1.5.1] - 02.09.2019</b>
+    <br>
+    <p>- Updated: Ukrainian translation</p>
+    <p>- Fixed: some background processes may leak if the program is force closed during the installation</p>
+    <p>- Fixed: standard FFU images (created for 16 GB or larger disks) can be installed on devices with less space (resulting in a failure later in the process)</p>
+    <br>
+
+    <b>Windows on Raspberry [version 1.5] - 29.08.2019</b>
+    <br>
+    <p>- New: support for Windows Full Flash Update (FFU) images</p>
+    <p>- Updated: 3rd party libraries</p>
+    <p>- Updated: Simplified Chinese translation</p>
+    <p>- Updated: Ukrainian translation</p>
+    <p>- Improved: user interface</p>
+    <p>- Fixed: the logger window can't be re-opened when closed from the taskbar</p>
+    <br>
+
+    <b>Windows on Raspberry [version 1.4] - 16.08.2019</b>
+    <br>
+    <p>- New: automatically download the required binaries (drivers package and UEFI)</p>
+    <p>- Updated: German translation</p>
+    <p>- Updated: Simplified Chinese translation</p>
+    <p>- Fixed: ESD image support regression</p>
+    <p>- Fixed: the main window can't be minimized using the taskbar</p>
+    <br>
+
+    <b>Windows on Raspberry [version 1.3] - 02.07.2019</b>
+    <br>
+    <p>- New: etcher-cli support for flashing the GPT image</p>
+    <p>- New: re-enabled the GPT partition scheme on ARM64 machines</p>
+    <p>- Fixed: minor configuration bug</p>
+    <br>
+
+    <b>Windows on Raspberry [version 1.2] - 01.07.2019</b>
+    <br>
+    <p>- New: partial Windows 10 ARM64 support (the GPT partition scheme is disabled)</p>
+    <p>- New: check for updates on startup</p>
+    <p>- New: "Copy to clipboard" button on the Logs window</p>
+    <p>- New: 64-bit support</p>
+    <p>- Updated: English translation</p>
+    <p>- Updated: Romanian translation</p>
+    <p>- Improved: application logging</p>
+    <br>
+
+    <b>Windows on Raspberry [version 1.1] - 20.06.2019</b>
+    <br>
+    <p>- New: detect system locale and change the default language accordingly</p>
+    <p>- New: Ukrainian translation</p>
+    <p>- Updated: Czech translation</p>
+    <p>- Updated: German translation</p>
+    <p>- Improved: language file structure</p>
+    <p>- Improved: user interface</p>
+    <br>
+
+    <b>Windows on Raspberry [version 1.0.3] - 19.03.2019</b>
+    <br>
+    <p>- New: Traditional Chinese translation</p>
+    <p>- New: French translation</p>
+    <p>- Updated: Russian translation</p>
+    <p>- Updated: German translation</p>
+    <p>- Updated: Czech translation</p>
+    <br>
+
+    <b>Windows on Raspberry [version 1.0.2] - 23.02.2019</b>
+    <br>
+    <p>- Fixed: some translated strings don't fit into the buttons/warning note box</p>
+    <p>- Fixed: the info box on the progress page is still visible if the installation fails</p>
+    <p>- Fixed: encoding inconsistency (Korean / Japanese translations)</p>
+    <p>- Updated: Simplified Chinese translation (thanks @nyaruko)</p>
+    <p>- Updated: Russian translation (thanks @beeoss)</p>
+    <br>
+
+    <b>Windows on Raspberry [version 1.0.1] - 17.02.2019</b>
+    <br>
+    <p>- New: support for the new device drivers (USB and Ethernet)</p>
+    <p>- Fixed: the info text box on the setup overview page can be selected</p>
+    <p>- Fixed: the name of the windows (MainWindow, LoggerWindow...) is not updated</p>
+    <p>- Updated: the note on the image selection page</p>
+    <p>- Updated: Polish translation (thanks @Gotard)</p>
+    <p>- Removed: USB-related warning notes</p>
+    <br>
+
+    <b>Windows on Raspberry [version 1.0] - 07.01.2019</b>
+    <br>
+    <p>- New: Windows Imaging/wimlib progress reporting</p>
+    <p>- New: report the installation progress to the Windows taskbar</p>
+    <p>- New: option to select the Windows edition to be installed</p>
+    <p>- New: warning message when attempting to close the program while an operation is in progress</p>
+    <p>- New: directly use the WIM/ESD file from a mounted ISO image</p>
+    <p>- New: option to restart the installation process if it fails</p>
+    <p>- New: white Welcome page image & custom icon/logo</p>
+    <p>- New: redesigned "Installation overview" page</p>
+    <p>- New: About window</p>
+    <p>- New: added the following translations:</p>
+    <ul>
+        <li>Japanese (thanks @imai9999)</li>
+        <li>Polish (thanks @macmmm81)</li>
+    </ul>
+    <p>- Improved: application logging</p>
+    <p>- Improved: exception handling</p>
+    <p>- Fixed: installation of non-ARM64 Windows builds is allowed</p>
+    <p>- Fixed: graphics flicker when starting the program</p>
+    <p>- Fixed: selection of the first storage drive (Disk 0) is allowed</p>
+    <p>- Fixed: some UI elements (info text boxes) can be selected and the blinking cursor becomes visible</p>
+    <p>- Fixed: the UI freezes when the list of disks is loading or when the installation process begins</p>
+    <br>
+
+    <b>Windows on Raspberry [version 0.2.4] - 19.10.2018</b>
+    <br>
+    <p>- New: added the following translations:</p>
+    <ul>
+        <li>Russian (thanks @Andryshik345)</li>
+        <li>German (thanks @Schule04)</li>
+    </ul>
+    <p>- Fixed: the program crashes on 32-bit builds of Windows when using wimlib-imagex</p>
+    <br>
+
+    <b>Windows on Raspberry [version 0.2.3] - 28.09.2018</b>
+    <br>
+    <p>- New: support for ESD images</p>
+    <p>- New: Hungarian translation (thanks @Googulator)</p>
+    <br>
+
+    <b>Windows on Raspberry [version 0.2.2.1] - 16.09.2018</b>
+    <br>
+    <p>- Fixed: DISM fails to add the drivers from the temporary path</p>
+    <br>
+
+    <b>Windows on Raspberry [version 0.2.2] - 15.09.2018</b>
+    <br>
+    <p>- New: added the following translations:</p>
+    <ul>
+        <li>Spanish (thanks Ivan Ruiz / @ivigamergames)</li>
+        <li>Croatian (thanks @Biggie)</li>
+    </ul>
+    <p>- Fixed: DISM/wimlib fails when a path has spaces</p>
+    <br>
+
+    <b>Windows on Raspberry [version 0.2.1] - 26.08.2018</b>
+    <br>
+    <p>- Fixed: sometimes the temporary folder is not entirely deleted on exit</p>
+    <br>
+
+    <b>Windows on Raspberry [version 0.2] - 11.08.2018</b>
+    <br>
+    <p>- New: support for 8GB SD cards (using wimlib-imagex LZX compression)</p>
+    <p>- New: added the following translations:</p>
+    <ul>
+        <li>Romanian</li>
+        <li>Simplified Chinese (thanks @thchi12)</li>
+        <li>Turkish (thanks @pixelomer)</li>
+        <li>Italian (thanks @xicciodj)</li>
+        <li>Czech (thanks @Nuparu00)</li>
+        <li>Korean (thanks @Raccooni_)</li>
+    </ul>
+    <p>- Improved: exception handling</p>
+    <p>- Fixed: Windows first boot error on a MBR disk</p>
+    <p>- Fixed: the boot files are downloaded every time an UEFI firmware is selected</p>
+    <p>- Fixed: "Save this configuration on exit" switch issue</p>
+    <br>
+
+    <b>Windows on Raspberry [version 0.1] - 21.07.2018</b>
+    <br> First version
+
+</body>
+
+</html>

@@ -1,0 +1,171 @@
+﻿[WoR lang file]
+Name=繁體中文(台灣) (Traditional Chinese)
+IsComplete=1
+
+[UpdateNotifyWindow]
+WindowTitle=更新
+NewVersionAvailableLabel=目前有新的版本
+NewVersionAvailableBox={appname} {0}已經釋出，您要下載更新嗎？
+DownloadBtn=下載
+CloseBtn=取消
+
+[AboutWindow]
+WindowTitle=關於
+AppVersionLabel=版本
+CreditsPage=作者
+ChangelogPage=更新紀錄
+LicensesPage=授權
+
+[LoggerWindow]
+WindowTitle=紀錄
+CopyToClipboardBtn=複製
+
+[LicenseAgreementWindow]
+WindowTitle=授權協議
+AcceptBtn=接受
+DeclineBtn=拒絕
+
+[General]
+MessageBox.CustomPackageWarn=使用過舊或不兼容的安裝包將可能導致安裝過程出現問題！{n}{n}建議您使用伺服器上可用的最新版本。{n}{n}您仍要繼續嗎?
+MessageBox.SelectedPackageInvalid.Heading=您所選擇的安裝包無效或不兼容於您的設備。
+MessageBox.SelectedPackageInvalid.Message=請選擇用於 {0} 的安裝包。
+MessageBox.PackageUpdateError.Heading=無法下載最新版的安裝包！
+MessageBox.PackageUpdateError.Message=如果您忽略此錯誤，此嚮導將繼續使用可能已經過時的本地版本。
+Message.ExtractingPackageToTemp=將檔案解壓縮到臨時文件夾...
+Message.DownloadingReqFiles=正在下載所需文件...
+Label.StorageDrive=存儲硬碟
+Label.DeviceType=裝置類型
+FilePathTextPlaceholder=請點擊 "{0}" 按鈕或拖放文件到這裡。
+ServerPackageInfoLabel=這是推薦的選項。 只要先前已經將安裝包下載到您的電腦上，您也可以在離線狀態下使用。
+
+[MessageBox]
+Button.OK=好
+Button.Cancel=取消
+Button.Abort=中止
+Button.Retry=重試
+Button.Ignore=忽略
+Button.Yes=是
+Button.No=否
+CheckBox.DoNotShowAgain=不要再次顯示
+
+[MessageBox.Common]
+Heading.SomethingWentWrong=有東西出現錯誤...
+Heading.Warning=警告!
+
+[MainWindow]
+SendFeedbackBtn=傳送回報訊息
+NextPageBtn=下一步
+BackPageBtn=上一步
+NextPageBtn.Install=安装
+NextPageBtn.Finish=完成
+MessageBox.TaskOngoing.Heading=確定要強制關閉應用程式？
+MessageBox.TaskOngoing.Message=另一個程序正在執行中。
+
+[WelcomePage]
+PageTitle=歡迎
+WelcomeLabel=歡迎使用 {appname}!
+WelcomeMsgTextBox=本嚮導將幫助您輕鬆地安裝 Windows 的完整桌面版本到您的 Raspberry Pi 電腦上。{n}{n}請點擊 {0} 按鈕以繼續。
+SelectLangLabel=語言:
+SelectWizardModeLabel=嚮導模式:
+SelectWizardModeCombo.BasicMode=只顯示必要的選項
+SelectWizardModeCombo.AdvancedMode=顯示所有的選項
+
+[SelectDevicePage]
+PageTitle=裝置選擇
+SelectDeviceLabel=選擇您的裝置
+DisksListCombo.TextEmptyList=未找到任何硬碟。 請點擊 {0} 按鈕來重新整理列表。
+DisksListCombo.TextNoItemSelected=點擊這裡來從列表中選取硬碟。
+StorageDriveWarningLabel=警告! 選擇錯誤的硬碟將導致不必要的數據損失。
+Device.ExperimentalSupport=實驗性的
+Device.SupportedModels=支援型號: {0}
+MessageBox.DiskAtLeast=所選的裝置必須擁有 {0} GB 以上的可用空間！
+MessageBox.DiskCompressedInstall.Heading=所選的裝置僅擁有足夠的空間進行壓縮版安裝。
+MessageBox.DiskCompressedInstall.Message=由於壓縮，系統性能可能會略有下降。
+Message.LoadingDisks=正在取讀磁碟列表...
+MessageBox.NewBootloaderRequiredWarn=如果您想要從 USB硬碟 或 GUID磁碟分割格式(GPT partitioning scheme) 啟動您的 {0} ,那麼 bootloader 必須更新到最新的版本。{n}{n}獲取更多資訊請參訪以下連結: {1}
+
+[SelectImagePage]
+PageTitle=選擇映像檔
+SelectImageLabel=請選擇您的 Windows on ARM 映像檔。
+ImageFileLabel=映像檔
+WindowsEditionLabel=Windows版本
+WorkingBuildsTextBox.MinBuild=您的裝置支援 Windows {0} 的版本 {1} 或更新的版本。
+WorkingBuildsTextBox.AllBuilds=您的裝置支援所有可用的 Windows {0} 的版本。
+WorkingBuildsTextBox.GetImage=若您還沒有任何的映像檔， 您可以在網站上找到如何下載的相關詳細資訊。
+SelectImageIndexCombo.TextEmptyList=請先選擇映像檔。
+MessageBox.SelectedImageInvalid=所選的檔案不是有效的Windows映像檔！
+MessageBox.SelectedImageUnsupported=不支援所選的檔案格式！
+MessageBox.SelectedImageErrorInfo.AllBuilds=請選擇兼容的 Windows {0} 映像檔。
+MessageBox.SelectedImageErrorInfo.MinBuild=請選擇兼容的 Windows {0} 的版本 {1} 或更新的映像檔。
+MessageBox.SelectedImageMountError.Heading=無法掛載所選映像檔！
+MessageBox.SelectedImageMountError.Message=請驗證Windows是否可以掛載此映像檔（右鍵->掛載）並重試。通過網路共用訪問可能會無法工作。{n}{n}如果此問題仍然存在但您可以手動掛載，您可以直接選擇在其{1}目錄下選擇{0}檔案。
+MessageBox.NotEnoughSpace.Heading=所選裝置沒有足夠空間安裝所選映像檔
+MessageBox.NotEnoughSpace.Message=請改用較大的儲存裝置或較小的映像檔。
+Message.MountingISO=正在加載映像檔...
+Message.UnmountingISO=正在卸載映像檔...
+Message.VerifyingImage=正在驗證映像檔...
+
+[SelectDriversPage]
+PageTitle=選擇驅動程式
+SelectDriversLabel=選擇驅動程式
+DriversNoteTextBox=備註：驅動程式必須被壓縮為{0}格式
+LocalDrvPkgRadioBtn=從磁碟安裝驅動程式
+ServerDrvPkgRadioBtn=從伺服器上下載最新驅動程式
+MessageBox.LicenseNotAccepted.Heading=您尚未同意所有的授權協議！
+MessageBox.LicenseNotAccepted.Message=您必須同意所有的授權協議才能使用這些驅動程式。
+
+[SelectUEFIPage]
+PageTitle=UEFI韌體
+SelectUEFILabel=選擇UEFI韌體
+UEFINoteTextBox=備註：所選的UEFI韌體必須為 {0} 副檔名。
+LocalUEFIRadioBtn=從磁碟安裝韌體
+ServerUEFIRadioBtn=從伺服器上下載最新韌體
+
+[SetupConfigurationPage]
+PageTitle=設定
+ConfigurationLabel=設定
+ConfigurationTabControl.MainTabPage=一般
+InstallOptionsGroup=安裝選項
+PartSchemeLabel=分區列表:
+ImgInstallLabel=安裝映像檔:
+EnableLZXCheck=使用LZX壓縮版安裝
+BootOptionsGroup=開機選項
+MessageBox.BootConfigEditorWarn=修改默認的啟動設置將可能導致您的設備發生故障或無法啟動。{n}{n}您仍要繼續嗎?
+MessageBox.MbrPartSchemeWarn=選擇MBR分區方案會封锁您使用恢復環境或進行系統更新。{n}{n}是否繼續？
+ConfigurationTabControl.AdvancedTabPage=進階
+MessageBox.AdvancedTabPageWarn=修改進階選項中的默認啟動設置將可能使特定設備無法使用或無法啟動系統。{n}{n}您確定要繼續嗎?
+WindowsBootOptionsGroup=Windows啟動選項
+MemoryLimitLabel=記憶體限制:
+RecoveryEnabledCheck=啟用Windows修復環境（WinRE）
+WoROptionsGroup={appname}選項
+SaveConfigOnExitCheck=離開時儲存設定
+SaveConfigOnExitCheckInfoLabel=注意：關閉的選項將不會保存。
+
+[SetupOverviewPage]
+PageTitle=安裝
+InstallOverviewLabel=預覽安裝
+InstallWarnBox=注意！所有在此裝置上的資料都將被清除！請備份重要檔案！
+OSLabel=作業系統
+DriversPathLabel=驅動程式位置
+UEFIPathLabel=UEFI韌體位置
+PartitionSchemeLabel=磁碟分割表格式
+ImageDeployerLabel=映像檔部屬者
+LZXCompressionLabel=LZX壓縮版安裝
+LZXCompression.YES=是
+LZXCompression.NO=否
+
+[SetupProgressPage]
+PageTitle=安裝
+InstallInfoBox=安裝程序將會耗費一段時間，這取決於裝置的速度。
+TryAgainBtn=請重試
+InstallStatusLabel.GettingReady=正在準備就緒...
+InstallStatusLabel.FormattingDisk=正在格式化裝置...
+InstallStatusLabel.CreatingPartitions=正在建立磁碟分割...
+InstallStatusLabel.InstallingWindows=正在安裝Windows...
+InstallStatusLabel.InstallingBootFiles=正在安裝開機檔案...
+InstallStatusLabel.InstallingDrivers=正在安裝驅動程式...
+InstallStatusLabel.RunningScript=正在運行自定義腳本...
+InstallStatusLabel.InstallFinished=安裝成功！
+InstallStatusLabel.InstallFailed=安裝失敗！
+MessageBox.RecoveryNotFoundWarn.Heading=找不到恢復鏡像！
+MessageBox.RecoveryNotFoundWarn.Message=如果繼續，恢復環境將會被完全禁用。

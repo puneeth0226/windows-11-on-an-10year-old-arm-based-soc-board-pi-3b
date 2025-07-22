@@ -1,0 +1,24 @@
+first u need to install pi imager in ur system 
+
+take a raspberry pi 3b or any old version will works 
+
+next go to this website 
+
+https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbHFoMGtEVVpTd3RwVEZrb3hGYm5jNHBsaF9Wd3xBQ3Jtc0ttcTlySlVXQkU4LU1xamtKV3R5WlpXcWVIQ0luUEthTFdyeEpQQzV5MTZjQklWMGgtdGtiRnF2WTc5RUF5MlpmNTVvZEZ0Z250TGlHOEpiTDk1SHN3LUNvOGJ3eHRsY1k1azQ0XzN6MThvU2hSTFRYQQ&q=https%3A%2F%2Fworproject.com%2Fesd&v=cX99gLE7h54
+
+install the image file from here or click on this link 
+
+
+http://dl.delivery.mp.microsoft.com/filestreamingservice/files/37acc189-7f4f-4e07-976c-1cf0a099ec79/26100.4349.250607-1500.ge_release_svc_refresh_CLIENTCONSUMER_RET_A64FRE_en-us.esd     
+
+this is an iso file for windows 
+
+go to download section and install the file 
+
+or just download the file with I have provided and extract it 
+
+next u will find 
+
+WoR.exe ,   click on it and install 
+
+next select the options and import the downloaded iso file and that's it 

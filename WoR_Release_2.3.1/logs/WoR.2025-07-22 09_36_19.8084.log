@@ -1,0 +1,14 @@
+2025-07-22 09:36:19.8084 [info] Windows on Raspberry 64-bit (version 2.3.1)
+2025-07-22 09:36:19.8877 [info] Copyright © 2018-2022 Mario Balanica. All Rights Reserved.
+2025-07-22 09:36:19.8877 [info] OS: Windows 10 Home Single Language ver 2009 (26100.1.amd64fre.ge_release.240331-1435)
+2025-07-22 09:36:19.9002 [info] OS language: en-US
+2025-07-22 09:36:20.6598 [debug] Loaded configuration file:
+2025-07-22 09:36:20.6708 [debug]   WizardBasicMode: 1
+2025-07-22 09:36:20.6918 [debug]   SaveConfigOnExit: 0
+2025-07-22 09:36:20.7566 [fatal] System.DllNotFoundException: Unable to load DLL 'lib\x64\libwim-15.dll' or one of its dependencies: The specified module could not be found. (0x0000007E)
+   at Joveler.DynLoader.DynLoaderBase..ctor(String libPath)
+   at ManagedWimLib.WimLibLoadManager.CreateLoader(String libPath)
+   at Joveler.DynLoader.LoadManagerBase`1.GlobalInit(String libPath)
+   at WoR.Windows.MainWindow.InitWimlib()
+   at WoR.Windows.MainWindow.AppInit()
+   at WoR.Windows.MainWindow..ctor()

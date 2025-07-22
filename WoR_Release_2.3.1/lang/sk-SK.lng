@@ -1,0 +1,171 @@
+﻿[WoR lang file]
+Name=Slovenčina (Slovak)
+IsComplete=0
+
+[UpdateNotifyWindow]
+WindowTitle=Aktualizácia
+NewVersionAvailableLabel=Je k dispozícii nová verzia
+NewVersionAvailableBox={appname} {0} je k dispozícii! Chcete stiahnuť ihneď?
+DownloadBtn=Stiahnuť
+CloseBtn=Zavrieť
+
+[AboutWindow]
+WindowTitle=O programe
+AppVersionLabel=Verzia
+CreditsPage=Tvorcovia
+ChangelogPage=Zoznam zmien
+LicensesPage=Licencie
+
+[LoggerWindow]
+WindowTitle=Logy
+CopyToClipboardBtn=Kopírovať
+
+[LicenseAgreementWindow]
+WindowTitle=Licenčná zmluva
+AcceptBtn=Prijať
+DeclineBtn=Odmietnuť
+
+[General]
+MessageBox.CustomPackageWarn=Výber zastaralého alebo nekompatibilného balíka môže spôsobiť problémy v inštalácii!{n}{n}Je preto odporúčané, aby ste použili poslednú verziu dostupnú na serveri.{n}{n}Chcete pokračovať?
+MessageBox.SelectedPackageInvalid.Heading=Vybraný balík je neplatný alebo není kompatibilný s vaším zariadením.
+MessageBox.SelectedPackageInvalid.Message=Vyberte postavený balík pre {0}.
+MessageBox.PackageUpdateError.Heading=The latest version of the package couldn't be downloaded!
+MessageBox.PackageUpdateError.Message=If you ignore this error, the setup will continue with the local version which may be outdated.
+Message.ExtractingPackageToTemp=Extrahovanie archívu do dočasného priečinka...
+Message.DownloadingReqFiles=Sťahujú sa požadované súbory...
+Label.StorageDrive=Úložisko
+Label.DeviceType=Typ zariadenia
+FilePathTextPlaceholder=Klikni na tlačidlo "{0}" alebo myšou sem presuňte súbor.
+ServerPackageInfoLabel=Toto je odporúčaná možnosť. Môže sa použiť aj offline, pokiaľ bol balík predtým stiahnutý.
+
+[MessageBox]
+Button.OK=OK
+Button.Cancel=Zrušiť
+Button.Abort=Prerušiť
+Button.Retry=Znova
+Button.Ignore=Ignorovať
+Button.Yes=Áno
+Button.No=Nie
+CheckBox.DoNotShowAgain=Znovu už nezobrazovať
+
+[MessageBox.Common]
+Heading.SomethingWentWrong=Niečo sa pokazilo...
+Heading.Warning=Varovanie!
+
+[MainWindow]
+SendFeedbackBtn=Poslať spätnú väzbu
+NextPageBtn=Ďalej
+BackPageBtn=Späť
+NextPageBtn.Install=Inštalovať
+NextPageBtn.Finish=Dokončiť
+MessageBox.TaskOngoing.Heading=Naozaj chcete vynútiť ukončenie aplikácie ?
+MessageBox.TaskOngoing.Message=Operácia momentálne prebieha.
+
+[WelcomePage]
+PageTitle=Vitajte
+WelcomeLabel=Vitajte vo {appname}!
+WelcomeMsgTextBox=Tento program vám pomôže jednoducho nainštalovať plnú desktopovú verziu Windowsu na váš Raspberry Pi počítač.{n}{n}Kliknite na tlačidlo {0} pre pokračovanie.
+SelectLangLabel=Zvoľte svoj jazyk:
+SelectWizardModeLabel=Wizard mode:
+SelectWizardModeCombo.BasicMode=Show only the required options
+SelectWizardModeCombo.AdvancedMode=Show all the options
+
+[SelectDevicePage]
+PageTitle=Výber zariadenia
+SelectDeviceLabel=Vybrať zariadenie
+DisksListCombo.TextEmptyList=Neboli nájdené žiadne disky. Kliknite na tlačidlo {0} pre opätovné načítanie zoznamu.
+DisksListCombo.TextNoItemSelected=Kliknite sem pre výber disku zo zoznamu.
+StorageDriveWarningLabel=Upozornenie! Výber nesprávneho disku môže viesť k nežiaducej strate údajov.
+Device.ExperimentalSupport=Experimentálna
+Device.SupportedModels=Podporované modely: {0}
+MessageBox.DiskAtLeast=Tento disk musí mať apsoň {0} GB voľného miesta!
+MessageBox.DiskCompressedInstall.Heading=Vybrané zariadenie má dostatok miesta na komprimovanú inštaláciu.
+MessageBox.DiskCompressedInstall.Message=Výkon systému sa môže mierne znížiť v dôsledku kompresie.
+Message.LoadingDisks=Načítava sa zoznam diskov...
+MessageBox.NewBootloaderRequiredWarn=Ak chcete nabootovať váš {0} z USB disku alebo použite GPT partície, bootloader musí byť aktualizovaný na najnovšiu verziu.{n}{n}Viac podrobností nájdete na nasledujúcom odkaze: {1}
+
+[SelectImagePage]
+PageTitle=Výber obrazu
+SelectImageLabel=Vyberte Váš Windows v ARM obraze
+ImageFileLabel=Súbor obrazu
+WindowsEditionLabel=Windows edícia
+WorkingBuildsTextBox.MinBuild=Vaše zariadenie podporuje Windows {0} verzia {1} alebo novší.
+WorkingBuildsTextBox.AllBuilds=Vaše zariadenie podporuje všetky dostupné verzie systému Windows {0}.
+WorkingBuildsTextBox.GetImage=Ak ešte nemáte obraz, podrobné informácie o tom, ako si jeden stiahnuť nájdete na webovej stránke projektu.
+SelectImageIndexCombo.TextEmptyList=Najskôr vyberte obraz.
+MessageBox.SelectedImageInvalid=Vybratý súbor nie je platným obrazom systému Windows !
+MessageBox.SelectedImageUnsupported=Vybraný súbor obrazu nie je podporovaný!
+MessageBox.SelectedImageErrorInfo.AllBuilds=Vyberte kompatibilný Windows {0} obraz.
+MessageBox.SelectedImageErrorInfo.MinBuild=Vyberte kompatibilný Windows {0} verzia {1} alebo novší obraz.
+MessageBox.SelectedImageMountError.Heading=The image couldn't be mounted!
+MessageBox.SelectedImageMountError.Message=Verify that the image can be mounted by Windows (right click -> Mount) and try again. Accessing it over a network share may not work.{n}{n}If the error persists but you're able to mount the image manually, you can directly select the {0} file from the {1} directory inside it.
+MessageBox.NotEnoughSpace.Heading=Na disku nie je dostatok miesta na inštaláciu tohto obrazu !
+MessageBox.NotEnoughSpace.Message=Vyberte väčšie úložisko disku alebo kompaktný obraz.
+Message.MountingISO=Pripájanie ISO obrazu...
+Message.UnmountingISO=Odpájanie ISO obrazu...
+Message.VerifyingImage=Overujem obraz...
+
+[SelectDriversPage]
+PageTitle=Výber ovládačov
+SelectDriversLabel=Vyberte ovládače
+DriversNoteTextBox=Poznámka: ovládače musia byť archivované v súborovom formáte {0}t.
+LocalDrvPkgRadioBtn=Použiť balík uložený v tomto počítači
+ServerDrvPkgRadioBtn=Použiť posledný balík dustupný na serveri
+MessageBox.LicenseNotAccepted.Heading=Neprijali ste jednu z licenčných zmlúv !
+MessageBox.LicenseNotAccepted.Message=Musia byť prijaté všetky licencie na použitie tohto balíka ovládačov.
+
+[SelectUEFIPage]
+PageTitle=UEFI firmware
+SelectUEFILabel=Vyberte UEFI firmware
+UEFINoteTextBox=Poznámka: UEFI firmware musí mať príponu {0} formátu.
+LocalUEFIRadioBtn=Použiť firmware uložený v tomto počítači
+ServerUEFIRadioBtn=Použiť posledný firmware dostupný na serveri
+
+[SetupConfigurationPage]
+PageTitle=Konfigurácia
+ConfigurationLabel=Konfigurácia
+ConfigurationTabControl.MainTabPage=Všeobecné
+InstallOptionsGroup=Inštalačné nastavenia
+PartSchemeLabel=Schéma zväzkov:
+ImgInstallLabel=Inštalovať obraz z:
+EnableLZXCheck=Povoliť LZX kompresiu inštalácie
+BootOptionsGroup=Nastavenia bootovania
+MessageBox.BootConfigEditorWarn=Úprava predvolenej konfigurácie bootu môže spôsobiť poruchu zariadenia alebo sa vôbec nenabootuje.{n}{n}Chcete pokračovať?
+MessageBox.MbrPartSchemeWarn=Choosing the MBR partitioning scheme will prevent you from using the recovery environment and doing system updates.{n}{n}Continue anyway?
+ConfigurationTabControl.AdvancedTabPage=Pokročilé
+MessageBox.AdvancedTabPageWarn=Zmena predvolených nastavení v pokročilom menu môže vypnúť určité funkcie zariadenia alebo sa zabráni systému nabootovať.{n}{n}Ste si istý, že chcete pokračovať?
+WindowsBootOptionsGroup=Nastavenia bootovania Windowsu
+MemoryLimitLabel=Limit pamäte:
+RecoveryEnabledCheck=Povoliť Windows Recovery Environment
+WoROptionsGroup={appname} nastavenia
+SaveConfigOnExitCheck=Pri ukončení túto konfiguráciu uložiť
+SaveConfigOnExitCheckInfoLabel=Poznámka: nastavenia sú vypnuté nebudú uložené.
+
+[SetupOverviewPage]
+PageTitle=Inštalácia
+InstallOverviewLabel=Prehľad inštalácie
+InstallWarnBox=Pozor! Všetky dáta na Vašom zariadení budú vymazané! Máte poslednú možnosť vytvoriť si zálohu!
+OSLabel=Operačný systém
+DriversPathLabel=Cesta k ovládačom
+UEFIPathLabel=Cesta k UEFI firmwaru
+PartitionSchemeLabel=Schéma zväzkov
+ImageDeployerLabel=Metóda zavedenia obrazu
+LZXCompressionLabel=LZX inštalačná kompresia
+LZXCompression.YES=ÁNO
+LZXCompression.NO=NIE
+
+[SetupProgressPage]
+PageTitle=Inštalácia
+InstallInfoBox=Tento proces môže nejakú dobu trvať, záleží na rýchlosti Vašeho zariadenia.
+TryAgainBtn=Try again
+InstallStatusLabel.GettingReady=Pripravuje sa...
+InstallStatusLabel.FormattingDisk=Formátovanie cieľového zariadenia...
+InstallStatusLabel.CreatingPartitions=Vytváranie zväzkov...
+InstallStatusLabel.InstallingWindows=Inštalácia Windowsu...
+InstallStatusLabel.InstallingBootFiles=Inštalácia bootovacích súborov...
+InstallStatusLabel.InstallingDrivers=Inštalácia ovládačov...
+InstallStatusLabel.RunningScript=Running the custom script...
+InstallStatusLabel.InstallFinished=Inštalácia bola dokončená!
+InstallStatusLabel.InstallFailed=Inštalácia zlyhala!
+MessageBox.RecoveryNotFoundWarn.Heading=The recovery image could not be found!
+MessageBox.RecoveryNotFoundWarn.Message=If you continue, the recovery environment will be completely disabled.

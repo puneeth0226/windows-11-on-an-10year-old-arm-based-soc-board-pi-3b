@@ -1,0 +1,171 @@
+﻿[WoR lang file]
+Name=Polski (Polish)
+IsComplete=0
+
+[UpdateNotifyWindow]
+WindowTitle=Aktualizacja
+NewVersionAvailableLabel=Nowa wersja jest dostępna.
+NewVersionAvailableBox={appname} wersja {0} jest dostępna! Czy chcesz pobrać ją teraz?
+DownloadBtn=Pobierz
+CloseBtn=Zamknij
+
+[AboutWindow]
+WindowTitle=O Programie
+AppVersionLabel=Wersja
+CreditsPage=Uznanie
+ChangelogPage=Dziennik zmian
+LicensesPage=Licencje
+
+[LoggerWindow]
+WindowTitle=Dzienniki
+CopyToClipboardBtn=Kopiuj
+
+[LicenseAgreementWindow]
+WindowTitle=Umowa licencyjna
+AcceptBtn=Akceptuj
+DeclineBtn=Odrzuć
+
+[General]
+MessageBox.CustomPackageWarn=Wybranie niekompatybilnego pliku może spowodować problemy podczas instalacji!{n}{n}Zalecane jest użycie najnowszej wersji z serwera.{n}{n}Kontynuować mimo wszystko?
+MessageBox.SelectedPackageInvalid.Heading=Wybrany plik jest niepoprawny lub niekompatybilny z twoim urządzeniem.
+MessageBox.SelectedPackageInvalid.Message=Proszę, wybierz poprawny pakiet {0}.
+MessageBox.PackageUpdateError.Heading=The latest version of the package couldn't be downloaded!
+MessageBox.PackageUpdateError.Message=If you ignore this error, the setup will continue with the local version which may be outdated.
+Message.ExtractingPackageToTemp=Wypakowywanie archiwum do folderu tymczasowego...
+Message.DownloadingReqFiles=Pobieranie wymaganych plików...
+Label.StorageDrive=Dysk
+Label.DeviceType=Typ urządzenia
+FilePathTextPlaceholder=Naciśnij ten "{0}" przycisk, lub przenieś plik tutaj.
+ServerPackageInfoLabel=To jest rekomendowana opcja. Może być używana jak jest offline, dopóki pakiet jest pobrany.
+
+[MessageBox]
+Button.OK=OK
+Button.Cancel=Anulij
+Button.Abort=Pomiń
+Button.Retry=Spróbuj ponownie
+Button.Ignore=Ignoruj
+Button.Yes=Tak
+Button.No=Nie
+CheckBox.DoNotShowAgain=Nie pokazuj tego ponownie
+
+[MessageBox.Common]
+Heading.SomethingWentWrong=Coś poszło nie tak...
+Heading.Warning=Uwaga!
+
+[MainWindow]
+SendFeedbackBtn=Wyślij opinię
+NextPageBtn=Dalej
+BackPageBtn=Wstecz
+NextPageBtn.Install=Zainstaluj
+NextPageBtn.Finish=Zakończ
+MessageBox.TaskOngoing.Heading=Czy chcesz wymusić zamknięcie programu?
+MessageBox.TaskOngoing.Message=Operacja w toku.
+
+[WelcomePage]
+PageTitle=Witaj!
+WelcomeLabel=Witaj w {appname}!
+WelcomeMsgTextBox=Ten kreator pomoże Ci łatwo zainstalować pełną wersję Windows na twoim komputerze Raspberry Pi.{n}{n} Naciśnij na ten {0} przycisk, aby kontynuować.
+SelectLangLabel=Wybierz język:
+SelectWizardModeLabel=Wizard mode:
+SelectWizardModeCombo.BasicMode=Show only the required options
+SelectWizardModeCombo.AdvancedMode=Show all the options
+
+[SelectDevicePage]
+PageTitle=Wybór urządzenia
+SelectDeviceLabel=Wybór urządzenia
+DisksListCombo.TextEmptyList=Nie wykryto żadnych dysków. Kliknij na ten {0} przycisk, aby odświeżyc listę.
+DisksListCombo.TextNoItemSelected=Naciśnij tutaj, aby wybrać dysk z listy.
+StorageDriveWarningLabel=Uwaga! Wybranie złego dysku, doprowadzi do niechcianej utraty danych.
+Device.ExperimentalSupport=Funkcje eksperymentalne
+Device.SupportedModels=Obsługiwane modele: {0}
+MessageBox.DiskAtLeast=Urządzenie musi mieć co najmniej {0} GB wolnego miejsca!
+MessageBox.DiskCompressedInstall.Heading=Wybrane urządzenie posiada wystarczająco miejsca na skompresowaną instalację.
+MessageBox.DiskCompressedInstall.Message=Wydajność może być lekko zaniżona, na wskutek trwającej kompresji.
+Message.LoadingDisks=Wyszukiwanie dysków...
+MessageBox.NewBootloaderRequiredWarn=Jeśli chcesz uruchomić system {0} z dysku USB, lub użyć tablicy partycji GPT, program rozruchowy musi być uaktualniony do najnowszej wersji.{n}{n}Proszę, odwiedź ten link, po więcej informacji: {1}
+
+[SelectImagePage]
+PageTitle=Wybór obrazu systemu
+SelectImageLabel=Wybierz obraz systemu Windows on ARM
+ImageFileLabel=Plik obrazu
+WindowsEditionLabel=Wersja Windows
+WorkingBuildsTextBox.MinBuild=Twoje urządzenie obsługuje Windows {0} wersję {1} ,lub nowszą.
+WorkingBuildsTextBox.AllBuilds=Twoje urządzenie obsługuje wszystkie wersje Windows {0}.
+WorkingBuildsTextBox.GetImage=Jeśli, jeszcze nie masz pliku obrazu, Możesz znaleźć detale ,jak taki pobrać na stronie projektu.
+SelectImageIndexCombo.TextEmptyList=Proszę, wybrać plik obrazy.
+MessageBox.SelectedImageInvalid=Wybrany plik nie jest prawidłowym plikiem obrazu systemu Windows!
+MessageBox.SelectedImageUnsupported=Wybrany plik obrazu jest nie wspierany!
+MessageBox.SelectedImageErrorInfo.AllBuilds=Proszę, wybierz kompatybilny obraz Windows {0}.
+MessageBox.SelectedImageErrorInfo.MinBuild=Proszę, wybierz kompatybilny plik obrazu Windows {0} wersje {1} lub nowszą.
+MessageBox.SelectedImageMountError.Heading=The image couldn't be mounted!
+MessageBox.SelectedImageMountError.Message=Verify that the image can be mounted by Windows (right click -> Mount) and try again. Accessing it over a network share may not work.{n}{n}If the error persists but you're able to mount the image manually, you can directly select the {0} file from the {1} directory inside it.
+MessageBox.NotEnoughSpace.Heading=Na dysku nie ma wystarczająco miejsca by zainstalować ten obraz!
+MessageBox.NotEnoughSpace.Message=Prosze wybierz większy dysk lub użyj kompaktowego obrazu.
+Message.MountingISO=Montowanie obrazu ISO...
+Message.UnmountingISO=Odmontowywanie pliku ISO...
+Message.VerifyingImage=Weryfikacja obrazu...
+
+[SelectDriversPage]
+PageTitle=Wybór sterowników
+SelectDriversLabel=Wybierz sterowniki
+DriversNoteTextBox=Uwaga: sterowniki muszą być spakowane do pliku {0}!
+LocalDrvPkgRadioBtn=Użyj archiwum ze sterownikami znalezionego na komputerze
+ServerDrvPkgRadioBtn=Użyj najnowszego archiwum ze sterownikami z serwera
+MessageBox.LicenseNotAccepted.Heading=Jedna z umów licencyjnych nie została zaakceptowana!
+MessageBox.LicenseNotAccepted.Message=Wszystkie, umowy licencyjne muszą zostac zaakceptowane, aby użyc tego pakietu sterowników.
+
+[SelectUEFIPage]
+PageTitle=Wybór pliku UEFI
+SelectUEFILabel=Wybierz oprogramowanie UEFI
+UEFINoteTextBox=Uwaga: plik oprogramowania UEFI musi mieć rozszerzenie {0}.
+LocalUEFIRadioBtn=Użyj oprogramowania znalezionego na komputerze
+ServerUEFIRadioBtn=Użyj najnowszego oprogramowania z serwera 
+
+[SetupConfigurationPage]
+PageTitle=Konfiguracja Instalacji
+ConfigurationLabel=Konfiguracja Instalacji
+ConfigurationTabControl.MainTabPage=Ogólne
+InstallOptionsGroup=Opcje instalacji
+PartSchemeLabel=Mapa Partycji:
+ImgInstallLabel=Zainstaluj obraz używając:
+EnableLZXCheck=Aktywuj kompresję LZX instalacji 
+BootOptionsGroup=Ustawienia rozruchu
+MessageBox.BootConfigEditorWarn=Modyfikacja domyślnej konfiguracji rozruchowej może spowodować niechciane zachowania lub błąd rozruchu..{n}{n}Kontynuować?
+MessageBox.MbrPartSchemeWarn=Choosing the MBR partitioning scheme will prevent you from using the recovery environment and doing system updates.{n}{n}Continue anyway?
+ConfigurationTabControl.AdvancedTabPage=Zaawansowane
+MessageBox.AdvancedTabPageWarn=Zmianianie domyślnych ustawieć w zaawansowanych opcjach może wyłączyć wyłączyć określone funkcje urządzenia lub uniemożliwić uruchomienie systemu.{n}{n}Czy jesteś pewny że chcesz kontynuować?
+WindowsBootOptionsGroup=Opcje rozruchu Windowsa
+MemoryLimitLabel=Limit Pamięci:
+RecoveryEnabledCheck=Uruchom środowisko odzyskiwania Windowsa
+WoROptionsGroup=Ustawienia {appname}
+SaveConfigOnExitCheck=Zapisz tę konfigurację
+SaveConfigOnExitCheckInfoLabel=Informacja: Opcje, które są wyłączone nie zostaną zapisane.
+
+[SetupOverviewPage]
+PageTitle=Instalacja
+InstallOverviewLabel=Podsumowanie instalacji
+InstallWarnBox=Ostrzeżenie! Wszystkie dane na wybranym urządzeniu zostaną usunięte! Utwórz kopię zapasową wszystkich ważnych plików, zanim będzie za późno!
+OSLabel=System operacyjny
+DriversPathLabel=Ścieżka do sterowników
+UEFIPathLabel=Ścieżka do pliku oprogramowania UEFI
+PartitionSchemeLabel=Mapa Partycji
+ImageDeployerLabel=Metoda instalacji obrazu
+LZXCompressionLabel=Kompresja LZX instalacji 
+LZXCompression.YES=TAK
+LZXCompression.NO=NIE
+
+[SetupProgressPage]
+PageTitle=Instalacja
+InstallInfoBox=Ten proces może zająć trochę czasu, w zależności od prędkości twojego urządzenia.
+TryAgainBtn=Spróbuj ponownie
+InstallStatusLabel.GettingReady=Przygotowywanie...
+InstallStatusLabel.FormattingDisk=Formatowanie urządzenia docelowego...
+InstallStatusLabel.CreatingPartitions=Tworzenie partycji...
+InstallStatusLabel.InstallingWindows=Instalowanie systemu Windows...
+InstallStatusLabel.InstallingBootFiles=Instalowanie plików rozruchowych...
+InstallStatusLabel.InstallingDrivers=Instalowanie sterowników...
+InstallStatusLabel.RunningScript=Running the custom script...
+InstallStatusLabel.InstallFinished=Instalacja została zakończona!
+InstallStatusLabel.InstallFailed=Instalacja się nie powiodła!
+MessageBox.RecoveryNotFoundWarn.Heading=The recovery image could not be found!
+MessageBox.RecoveryNotFoundWarn.Message=If you continue, the recovery environment will be completely disabled.

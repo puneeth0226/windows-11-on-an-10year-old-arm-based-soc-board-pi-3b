@@ -1,0 +1,235 @@
+2025-07-22 09:39:54.3820 [info] Windows on Raspberry 64-bit (version 2.3.1)
+2025-07-22 09:39:54.4774 [info] Copyright © 2018-2022 Mario Balanica. All Rights Reserved.
+2025-07-22 09:39:54.4894 [info] OS: Windows 10 Home Single Language ver 2009 (26100.1.amd64fre.ge_release.240331-1435)
+2025-07-22 09:39:54.4894 [info] OS language: en-US
+2025-07-22 09:39:55.3623 [debug] Loaded configuration file:
+2025-07-22 09:39:55.3723 [debug]   WizardBasicMode: 1
+2025-07-22 09:39:55.3843 [debug]   SaveConfigOnExit: 0
+2025-07-22 09:39:55.7224 [info] Loaded language: en-US
+2025-07-22 09:39:56.1263 [info] Checking for updates...
+2025-07-22 09:39:57.7153 [info] No updates found.
+2025-07-22 09:40:04.5734 [info] Loading disks...
+2025-07-22 09:40:04.7912 [info] Disk 2 - Mass Storage Device USB Device - Removable Media - 14 GB
+2025-07-22 09:40:04.8102 [info] Disk 1 - WD_BLACK SN850X 1000GB - Fixed hard disk media - 931 GB
+2025-07-22 09:40:04.8402 [info] Disk 0 - KBG50ZNT512G LS KIOXIA - Fixed hard disk media - 476 GB
+2025-07-22 09:40:04.8482 [info] 3 disk(s) found
+2025-07-22 09:40:06.3482 [info] Selected device: Raspberry Pi 2/3 [ARM64]
+2025-07-22 09:40:09.8846 [info] Selected disk: Disk 2 - Mass Storage Device USB Device - Removable Media - 14 GB
+2025-07-22 09:50:33.5490 [info] Selected image (ESD): 19045.3803.231204-0204.22h2_release_svc_refresh_CLIENTCONSUMER_RET_A64FRE_en-us.esd
+2025-07-22 09:50:33.6756 [info] Edition 1: Windows Setup Media build 0.0 arch x86 [unsupported]
+2025-07-22 09:50:33.6826 [info] Edition 2: Microsoft Windows PE (arm64) build 19041.3803 arch ARM64
+2025-07-22 09:50:33.6928 [info] Edition 3: Microsoft Windows Setup (arm64) build 19041.3803 arch ARM64
+2025-07-22 09:50:33.7154 [info] Edition 4: Windows 10 Home build 19041.3803 arch ARM64
+2025-07-22 09:50:33.7339 [info] Edition 5: Windows 10 Home Single Language build 19041.3803 arch ARM64
+2025-07-22 09:50:33.7521 [info] Edition 6: Windows 10 Pro build 19041.3803 arch ARM64
+2025-07-22 09:50:33.7810 [info] Selected edition: Windows 10 Home build 19041.3803
+2025-07-22 09:50:41.0703 [info] Selected edition: Windows 10 Pro build 19041.3803
+2025-07-22 09:50:41.9414 [info] Drivers package source: server
+2025-07-22 09:50:41.9414 [info] Drivers package remote repository: worproject/RPi-Windows-Drivers
+2025-07-22 09:50:42.0377 [debug] Verifying the local asset...
+2025-07-22 09:50:42.0377 [debug] Local asset ID: "64789116"
+2025-07-22 09:50:42.0629 [debug] Getting the latest release from "worproject/RPi-Windows-Drivers"
+2025-07-22 09:50:42.6570 [debug] Release name: "Version 0.17", ID: "66296007"
+2025-07-22 09:50:42.6643 [debug] Getting the latest asset from release "66296007"
+2025-07-22 09:50:42.6643 [debug] Asset name filter: "RPi3_Windows_ARM64"
+2025-07-22 09:50:42.6643 [debug] Asset name: "RPi3_Windows_ARM64_Drivers_v0.17.zip", ID: "64789116"
+2025-07-22 09:50:42.6774 [debug] The local asset is up-to-date!
+2025-07-22 09:50:42.7388 [info] UEFI package source: server
+2025-07-22 09:50:42.7388 [info] UEFI package remote repository: pftf/RPi3
+2025-07-22 09:50:42.8081 [debug] Verifying the local asset...
+2025-07-22 09:50:42.8081 [debug] Local asset ID: "111341553"
+2025-07-22 09:50:42.8195 [debug] Getting the latest release from "pftf/RPi3"
+2025-07-22 09:50:43.0930 [debug] Release name: "v1.39", ID: "107331197"
+2025-07-22 09:50:43.1003 [debug] Getting the latest asset from release "107331197"
+2025-07-22 09:50:43.1003 [debug] Asset name: "RPi3_UEFI_Firmware_v1.39.zip", ID: "111341553"
+2025-07-22 09:50:43.1003 [debug] The local asset is up-to-date!
+2025-07-22 09:50:49.6420 [info] -- Installation details --
+2025-07-22 09:50:49.6520 [info] Disk
+2025-07-22 09:50:49.6650 [info]   Index: 2
+2025-07-22 09:50:49.6650 [info]   Name: Mass Storage Device USB Device
+2025-07-22 09:50:49.6842 [info]   Type: Removable Media
+2025-07-22 09:50:49.6991 [info]   Size: 14
+2025-07-22 09:50:49.7102 [info] Device
+2025-07-22 09:50:49.7102 [info]   Type: RPi3-ARM64
+2025-07-22 09:50:49.7276 [info] Image
+2025-07-22 09:50:49.7276 [info]   Format: ESD
+2025-07-22 09:50:49.7473 [info]   Index: 6
+2025-07-22 09:50:49.7606 [info]   Name: Windows 10 Pro
+2025-07-22 09:50:49.7723 [info]   Arch: ARM64
+2025-07-22 09:50:49.7723 [info]   Build: 19041.3803
+2025-07-22 09:50:49.7929 [info] Drivers package
+2025-07-22 09:50:49.8048 [info]   FilePath: worproject/RPi-Windows-Drivers
+2025-07-22 09:50:49.8048 [info]   ExtractedPath: C:\Users\punee\OneDrive\Documents\GitHub\windows 11 on an 10yr old soc board\WoR_Release_2.3.1\res\drivers\RPi3-ARM64
+2025-07-22 09:50:49.8218 [info] UEFI package
+2025-07-22 09:50:49.8218 [info]   FilePath: pftf/RPi3
+2025-07-22 09:50:49.8359 [info]   ExtractedPath: C:\Users\punee\OneDrive\Documents\GitHub\windows 11 on an 10yr old soc board\WoR_Release_2.3.1\res\bootpackage\RPi3-ARM64
+2025-07-22 09:50:49.8359 [info] Options
+2025-07-22 09:50:49.8577 [info]   UseLZXCompression: False
+2025-07-22 09:50:49.8681 [info]   PartitionScheme: GPT
+2025-07-22 09:50:49.8810 [info]   ImageDeployer: WIMGAPI
+2025-07-22 09:50:49.8810 [info]   MemoryLimit: 0
+2025-07-22 09:50:49.8984 [info]   RecoveryEnabled: True
+2025-07-22 09:50:49.8984 [info] Boot config
+2025-07-22 09:50:49.9180 [info]   Path: C:\Users\punee\OneDrive\Documents\GitHub\windows 11 on an 10yr old soc board\WoR_Release_2.3.1\res\bootpackage\RPi3-ARM64\_wor_boot_config.txt
+2025-07-22 09:50:49.9329 [info]   Contents:
+2025-07-22 09:50:49.9496 [info]      arm_64bit=1
+2025-07-22 09:50:49.9603 [info]      disable_commandline_tags=2
+2025-07-22 09:50:49.9603 [info]      disable_overscan=1
+2025-07-22 09:50:49.9745 [info]      enable_uart=1
+2025-07-22 09:50:49.9745 [info]      uart_2ndstage=1
+2025-07-22 09:50:49.9902 [info]      armstub=RPI_EFI.fd
+2025-07-22 09:50:49.9902 [info]      device_tree_address=0x1f0000
+2025-07-22 09:50:50.0053 [info]      device_tree_end=0x200000
+2025-07-22 09:50:50.0053 [info]      # Uncomment if you have trouble with the UART console during boot
+2025-07-22 09:50:50.0210 [info]      #core_freq=250
+2025-07-22 09:50:50.0210 [info]      
+2025-07-22 09:50:50.0363 [info] CompressionRequired: False
+2025-07-22 09:50:50.0363 [info] -- End of installation details --
+2025-07-22 09:50:50.0644 [info] The installation process has started!
+2025-07-22 09:50:50.0836 [info] Disabling autorun (Windows format dialogs)...
+2025-07-22 09:50:50.0987 [debug] Getting the NoDriveTypeAutoRun policy...
+2025-07-22 09:50:50.0987 [debug] NoDriveTypeAutoRun policy value: 255
+2025-07-22 09:50:50.1226 [info] Autorun is already disabled.
+2025-07-22 09:50:50.1326 [info] Allocated partition letters:
+2025-07-22 09:50:50.1473 [info] Windows partition: M
+2025-07-22 09:50:50.1611 [info] Boot partition: N
+2025-07-22 09:50:50.1806 [info] Formatting the target device...
+2025-07-22 09:50:50.1992 [debug] Creating diskpart script with the following commands: select disk 2 , clean , exit
+2025-07-22 09:50:50.2294 [debug] Launch diskpart.exe with the following arguments: /s "C:\Users\punee\OneDrive\Documents\GitHub\windows 11 on an 10yr old soc board\WoR_Release_2.3.1\temp\diskpart.script"
+2025-07-22 09:51:01.3318 [debug] diskpart.exe process output:
+2025-07-22 09:51:01.3379 [debug] Standard output:
+
+Microsoft DiskPart version 10.0.26100.1
+
+Copyright (C) Microsoft Corporation.
+On computer: PUNEETH
+
+Disk 2 is now the selected disk.
+
+DiskPart succeeded in cleaning the disk.
+
+Leaving DiskPart...
+
+2025-07-22 09:51:01.3379 [debug] Exit code: 0
+2025-07-22 09:51:04.8669 [info] The target device has been erased!
+2025-07-22 09:51:04.8669 [info] Creating the partitions...
+2025-07-22 09:51:04.8891 [debug] Creating diskpart script with the following commands: select disk 2 , convert mbr , convert gpt , list partition , exit
+2025-07-22 09:51:04.9021 [debug] Launch diskpart.exe with the following arguments: /s "C:\Users\punee\OneDrive\Documents\GitHub\windows 11 on an 10yr old soc board\WoR_Release_2.3.1\temp\diskpart.script"
+2025-07-22 09:51:12.8053 [debug] diskpart.exe process output:
+2025-07-22 09:51:12.8053 [debug] Standard output:
+
+Microsoft DiskPart version 10.0.26100.1
+
+Copyright (C) Microsoft Corporation.
+On computer: PUNEETH
+
+Disk 2 is now the selected disk.
+
+DiskPart successfully converted the selected disk to MBR format.
+
+DiskPart successfully converted the selected disk to GPT format.
+
+There are no partitions on this disk to show.
+
+Leaving DiskPart...
+
+2025-07-22 09:51:12.8213 [debug] Exit code: 0
+2025-07-22 09:51:12.8748 [debug] Creating diskpart script with the following commands: select disk 2 , create partition primary size=128 , format fs=fat32 quick label=BOOT , assign letter=N , create partition msr size=16 , create partition primary , format fs=ntfs quick label=Windows , assign letter=M , exit
+2025-07-22 09:51:12.8954 [debug] Launch diskpart.exe with the following arguments: /s "C:\Users\punee\OneDrive\Documents\GitHub\windows 11 on an 10yr old soc board\WoR_Release_2.3.1\temp\diskpart.script"
+2025-07-22 09:51:41.0922 [debug] diskpart.exe process output:
+2025-07-22 09:51:41.0987 [debug] Standard output:
+
+Microsoft DiskPart version 10.0.26100.1
+
+Copyright (C) Microsoft Corporation.
+On computer: PUNEETH
+
+Disk 2 is now the selected disk.
+
+DiskPart succeeded in creating the specified partition.
+
+    0 percent completed    0 percent completed    0 percent completed  100 percent completed
+
+DiskPart successfully formatted the volume.
+
+DiskPart successfully assigned the drive letter or mount point.
+
+DiskPart succeeded in creating the specified partition.
+
+DiskPart succeeded in creating the specified partition.
+
+    0 percent completed    0 percent completed    0 percent completed    0 percent completed    0 percent completed    0 percent completed    0 percent completed    0 percent completed    0 percent completed    0 percent completed    0 percent completed    0 percent completed    0 percent completed    0 percent completed    0 percent completed    0 percent completed    0 percent completed    0 percent completed    0 percent completed    0 percent completed    0 percent completed    0 percent completed    0 percent completed    0 percent completed    0 percent completed    0 percent completed    0 percent completed    0 percent completed    0 percent completed    0 percent completed    0 percent completed    0 percent completed    0 percent completed    0 percent completed  100 percent completed
+
+DiskPart successfully formatted the volume.
+
+DiskPart successfully assigned the drive letter or mount point.
+
+Leaving DiskPart...
+
+2025-07-22 09:51:41.0987 [debug] Exit code: 0
+2025-07-22 09:51:41.1540 [info] The partitions have been created!
+2025-07-22 09:51:41.1725 [info] Applying the VBR patch...
+2025-07-22 09:51:41.2090 [info] The disk has been successfully patched!
+2025-07-22 09:51:41.2350 [info] Applying the WIM image to: M
+2025-07-22 09:51:41.2531 [trace] Started Windows Imaging
+2025-07-22 10:19:20.0315 [trace] Windows Imaging finished the task successfully!
+2025-07-22 10:19:20.0472 [info] The image has been applied to: M
+2025-07-22 10:19:20.0598 [info] Installing drivers into the base image...
+2025-07-22 10:20:00.5909 [info] Finding WinRE image...
+2025-07-22 10:20:00.6038 [info] Found image at: M:\Windows\System32\Recovery\winre.wim
+2025-07-22 10:20:00.6038 [info] Getting list of available temporary paths...
+2025-07-22 10:20:00.6328 [info] Mounting the image at: C:\Users\punee\OneDrive\Documents\GitHub\windows 11 on an 10yr old soc board\WoR_Release_2.3.1\temp\setup
+2025-07-22 10:20:32.9877 [info] Installing drivers into the WinRE image...
+2025-07-22 10:20:44.4593 [info] Unmounting the image and saving the changes...
+2025-07-22 10:21:27.2853 [info] The drivers have been installed!
+2025-07-22 10:21:27.2853 [info] Installing the boot files on: N
+2025-07-22 10:21:27.7800 [info] The boot files have been copied to: N
+2025-07-22 10:21:27.7943 [info] Creating the BCD...
+2025-07-22 10:21:27.8122 [debug] Launch bcdboot.exe with the following arguments: M:\Windows /s N: /f UEFI
+2025-07-22 10:21:35.1631 [debug] bcdboot.exe process output:
+2025-07-22 10:21:35.1631 [debug] Standard output:
+Boot files successfully created.
+
+2025-07-22 10:21:35.1631 [debug] Exit code: 0
+2025-07-22 10:21:35.1810 [info] The BCD has been created!
+2025-07-22 10:21:35.1810 [info] Setting testsigning and nointegritychecks on...
+2025-07-22 10:21:35.2082 [debug] Launch bcdedit.exe with the following arguments: /store N:\EFI\Microsoft\Boot\BCD /set {bootloadersettings} testsigning on
+2025-07-22 10:21:36.7401 [debug] bcdedit.exe process output:
+2025-07-22 10:21:36.7401 [debug] Standard output:
+The operation completed successfully.
+
+2025-07-22 10:21:36.7401 [debug] Exit code: 0
+2025-07-22 10:21:36.7703 [debug] Launch bcdedit.exe with the following arguments: /store N:\EFI\Microsoft\Boot\BCD /set {bootloadersettings} nointegritychecks on
+2025-07-22 10:21:37.0212 [debug] bcdedit.exe process output:
+2025-07-22 10:21:37.0212 [debug] Standard output:
+The operation completed successfully.
+
+2025-07-22 10:21:37.0212 [debug] Exit code: 0
+2025-07-22 10:21:37.0399 [info] testsigning and nointegritychecks have been enabled!
+2025-07-22 10:21:37.0542 [info] Converting boot partition to ESP...
+2025-07-22 10:21:37.0711 [debug] Creating diskpart script with the following commands: select disk 2 , select partition 1 , remove letter=N: , set id=C12A7328-F81F-11D2-BA4B-00A0C93EC93B override , exit
+2025-07-22 10:21:37.0882 [debug] Launch diskpart.exe with the following arguments: /s "C:\Users\punee\OneDrive\Documents\GitHub\windows 11 on an 10yr old soc board\WoR_Release_2.3.1\temp\diskpart.script"
+2025-07-22 10:21:50.8478 [debug] diskpart.exe process output:
+2025-07-22 10:21:50.8478 [debug] Standard output:
+
+Microsoft DiskPart version 10.0.26100.1
+
+Copyright (C) Microsoft Corporation.
+On computer: PUNEETH
+
+Disk 2 is now the selected disk.
+
+Partition 1 is now the selected partition.
+
+DiskPart successfully removed the drive letter or mount point.
+
+DiskPart successfully set the partition ID.
+
+Leaving DiskPart...
+
+2025-07-22 10:21:50.8478 [debug] Exit code: 0
+2025-07-22 10:21:50.8664 [info] Boot partition converted to ESP.
+2025-07-22 10:21:50.8864 [info] The installation has been finished!
+2025-07-22 10:21:50.8966 [info] Elapsed time: 00:31:00
+2025-07-22 10:22:11.9506 [info] Deleting the temporary folder...
+2025-07-22 10:22:12.0013 [info] The temporary folder has been deleted!

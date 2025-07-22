@@ -1,0 +1,22 @@
+﻿@font-face {
+    font-family: SegoeUI;
+    src: local("Segoe UI");
+}
+
+@font-face {
+    font-family: SegoeUIBold;
+    src: local("Segoe UI Bold");
+}
+
+body {
+    background: #252526;
+    color: white;
+    font-family: SegoeUI;
+    font-size: 10pt;
+    scrollbar-face-color: #33383b;
+    scrollbar-3dlight-color: #252526;
+    scrollbar-highlight-color: #33383b;
+    scrollbar-track-color: #252526;
+    scrollbar-arrow-color: #33383b;
+    scrollbar-shadow-color: #252526;
+}

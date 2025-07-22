@@ -1,0 +1,171 @@
+﻿[WoR lang file]
+Name=Magyar (Hungarian)
+IsComplete=0
+
+[UpdateNotifyWindow]
+WindowTitle=Frissítés
+NewVersionAvailableLabel=Új verzió érhető el
+NewVersionAvailableBox={appname} {0} elérhető! Szeretnéd letölteni?
+DownloadBtn=Letöltés
+CloseBtn=Bezár
+
+[AboutWindow]
+WindowTitle=Programról
+AppVersionLabel=Verzió
+CreditsPage=Készítők
+ChangelogPage=Módosítások
+LicensesPage=Licencek
+
+[LoggerWindow]
+WindowTitle=Napló
+CopyToClipboardBtn=Másol
+
+[LicenseAgreementWindow]
+WindowTitle=Licenc
+AcceptBtn=Elfogad
+DeclineBtn=Elutasít
+
+[General]
+MessageBox.CustomPackageWarn=Choosing an outdated or incompatible package may cause installation problems!{n}{n}It is recommended that you use the latest version available on the server instead.{n}{n}Continue anyway?
+MessageBox.SelectedPackageInvalid.Heading=The selected package is invalid or incompatible with your device.
+MessageBox.SelectedPackageInvalid.Message=Please select a package built for {0}.
+MessageBox.PackageUpdateError.Heading=The latest version of the package couldn't be downloaded!
+MessageBox.PackageUpdateError.Message=If you ignore this error, the setup will continue with the local version which may be outdated.
+Message.ExtractingPackageToTemp=Az archívum kibontása ideiglenes mappába...
+Message.DownloadingReqFiles=Szükséges fájlok letöltése...
+Label.StorageDrive=Storage drive
+Label.DeviceType=Device type
+FilePathTextPlaceholder=Click on the "{0}" button or drag and drop the file here.
+ServerPackageInfoLabel=This is the recommended option. It can be used offline too, as long as the package has been previously downloaded.
+
+[MessageBox]
+Button.OK=OK
+Button.Cancel=Cancel
+Button.Abort=Abort
+Button.Retry=Retry
+Button.Ignore=Ignore
+Button.Yes=Yes
+Button.No=No
+CheckBox.DoNotShowAgain=Don't show this again
+
+[MessageBox.Common]
+Heading.SomethingWentWrong=Something went wrong...
+Heading.Warning=Warning!
+
+[MainWindow]
+SendFeedbackBtn=Send feedback
+NextPageBtn=Tovább
+BackPageBtn=Vissza
+NextPageBtn.Install=Telepítés
+NextPageBtn.Finish=Befejezés
+MessageBox.TaskOngoing.Heading=Biztos bezárja az alkalmazást?
+MessageBox.TaskOngoing.Message=Folyamatban van egy művelet.
+
+[WelcomePage]
+PageTitle=Üdvözöljük
+WelcomeLabel=Üdvözöljük a {appname}!
+WelcomeMsgTextBox=This wizard will help you easily install the full desktop version of Windows on your Raspberry Pi computer.{n}{n}Click on the {0} button to continue.
+SelectLangLabel=Válasszon nyelvet:
+SelectWizardModeLabel=Wizard mode:
+SelectWizardModeCombo.BasicMode=Show only the required options
+SelectWizardModeCombo.AdvancedMode=Show all the options
+
+[SelectDevicePage]
+PageTitle=Válassza ki az eszközt
+SelectDeviceLabel=Válassza ki az eszközt
+DisksListCombo.TextEmptyList=No drives have been found. Click on the {0} button to reload the list.
+DisksListCombo.TextNoItemSelected=Click here to select a drive from the list.
+StorageDriveWarningLabel=Warning! Selecting the wrong drive may lead to unwanted data loss.
+Device.ExperimentalSupport=Experimental
+Device.SupportedModels=Supported models: {0}
+MessageBox.DiskAtLeast=Az eszközt legalább {0} GB szabad hely szükséges!
+MessageBox.DiskCompressedInstall.Heading=A kijelölt meghajtón van elegendő szabad hely a tömörített (LZX) telepítéshez.
+MessageBox.DiskCompressedInstall.Message=System performance may be slightly reduced due to compression.
+Message.LoadingDisks=Illesztők betöltése...
+MessageBox.NewBootloaderRequiredWarn=If you want to boot your {0} from an USB drive or use the GPT partitioning scheme, the bootloader must be updated to the latest version.{n}{n}Please visit the following link for more details: {1}
+
+[SelectImagePage]
+PageTitle=Rendszerkép választása
+SelectImageLabel=Válassza ki a telepítendő Windows rendszerképet
+ImageFileLabel=Image file
+WindowsEditionLabel=Windows változat
+WorkingBuildsTextBox.MinBuild=Your device supports Windows {0} build {1} or newer.
+WorkingBuildsTextBox.AllBuilds=Your device supports all the available builds of Windows {0}.
+WorkingBuildsTextBox.GetImage=If you don't have an image yet, you can find details on how to download one on the project website.
+SelectImageIndexCombo.TextEmptyList=Please select an image first.
+MessageBox.SelectedImageInvalid=A kiválasztott fájl nem egy Windows kép fájl!
+MessageBox.SelectedImageUnsupported=A kiválasztott fájl nem támogatott!
+MessageBox.SelectedImageErrorInfo.AllBuilds=Please select a compatible Windows {0} image.
+MessageBox.SelectedImageErrorInfo.MinBuild=Please select a compatible Windows {0} build {1} or newer image.
+MessageBox.SelectedImageMountError.Heading=The image couldn't be mounted!
+MessageBox.SelectedImageMountError.Message=Verify that the image can be mounted by Windows (right click -> Mount) and try again. Accessing it over a network share may not work.{n}{n}If the error persists but you're able to mount the image manually, you can directly select the {0} file from the {1} directory inside it.
+MessageBox.NotEnoughSpace.Heading=Nincs elég hely a kép fájl telepítéséhez!
+MessageBox.NotEnoughSpace.Message=Válasszon nagyobb tárolót vagy tömörítse be a kép fájlt.
+Message.MountingISO=ISO képfájl csatolása...
+Message.UnmountingISO=ISO képfájl leválasztása...
+Message.VerifyingImage=Verifying the image...
+
+[SelectDriversPage]
+PageTitle=Illesztők választása
+SelectDriversLabel=Válassza ki az illesztőket
+DriversNoteTextBox=Megjegyzés: Az illesztőknek {0} archívumba kell csomagolni.
+LocalDrvPkgRadioBtn=Használjon egy csomagot a számítógépről
+ServerDrvPkgRadioBtn=Használja a legfrissebb csomagot a szerverről
+MessageBox.LicenseNotAccepted.Heading=Nem fogadta el a licenc szerződést!
+MessageBox.LicenseNotAccepted.Message=All licenses must be accepted to use this drivers package.
+
+[SelectUEFIPage]
+PageTitle=UEFI firmware
+SelectUEFILabel=Válassza ki az UEFI firmware-t
+UEFINoteTextBox=Megjegyzés: az UEFI firmware egy {0} kiterjesztésű fájl.
+LocalUEFIRadioBtn=Használjon egy UEFI firmware-t a számítógépről
+ServerUEFIRadioBtn=Használja a legfrissebb UEFI firmware-t a szerverről
+
+[SetupConfigurationPage]
+PageTitle=Beállítás
+ConfigurationLabel=Beállítás
+ConfigurationTabControl.MainTabPage=General
+InstallOptionsGroup=Telepítési lehetőségek
+PartSchemeLabel=Partícionálás típusa:
+ImgInstallLabel=Telepítés eszköze:
+EnableLZXCheck=LZX-tömörített rendszer telepítése
+BootOptionsGroup=Boot beállítások
+MessageBox.BootConfigEditorWarn=Modifying the default boot configuration may cause the device to malfunction or not boot at all.{n}{n}Continue anyway?
+MessageBox.MbrPartSchemeWarn=Choosing the MBR partitioning scheme will prevent you from using the recovery environment and doing system updates.{n}{n}Continue anyway?
+ConfigurationTabControl.AdvancedTabPage=Advanced
+MessageBox.AdvancedTabPageWarn=Changing the default settings in the advanced menu may disable specific device features or prevent the system from booting.{n}{n}Are you sure you want to continue?
+WindowsBootOptionsGroup=Windows boot options
+MemoryLimitLabel=Memory limit:
+RecoveryEnabledCheck=Enable the Windows Recovery Environment
+WoROptionsGroup={appname} beállításai
+SaveConfigOnExitCheck=Beállítások elmentése kilépéskor
+SaveConfigOnExitCheckInfoLabel=Note: options that are disabled will not be saved.
+
+[SetupOverviewPage]
+PageTitle=Telepítés
+InstallOverviewLabel=Telepítés áttekintése
+InstallWarnBox=Figyelem! Az eszközön lévő összes adat törölve lesz! Készítsen másolatot, mielőtt túl késő!
+OSLabel=Operációs rendszer
+DriversPathLabel=Illesztőcsomag helye
+UEFIPathLabel=UEFI firmware helye
+PartitionSchemeLabel=Partícionálás típusa
+ImageDeployerLabel=Telepítés eszköze
+LZXCompressionLabel=LZX-tömörítés
+LZXCompression.YES=ENGEDÉLYEZVE
+LZXCompression.NO=LETILTVA
+
+[SetupProgressPage]
+PageTitle=Telepítés
+InstallInfoBox=Az eszközt teljesítményétől függően ez a folyamat hosszú ideig is eltarthat.
+TryAgainBtn=Try again
+InstallStatusLabel.GettingReady=Felkészülés...
+InstallStatusLabel.FormattingDisk=Célmeghajtó formázása...
+InstallStatusLabel.CreatingPartitions=Partíciók létrehozása...
+InstallStatusLabel.InstallingWindows=Windows telepítése...
+InstallStatusLabel.InstallingBootFiles=Boot fájlok telepítése...
+InstallStatusLabel.InstallingDrivers=Illesztők telepítése...
+InstallStatusLabel.RunningScript=Running the custom script...
+InstallStatusLabel.InstallFinished=A telepítés befejeződött!
+InstallStatusLabel.InstallFailed=Hiba történt a telepítés során!
+MessageBox.RecoveryNotFoundWarn.Heading=The recovery image could not be found!
+MessageBox.RecoveryNotFoundWarn.Message=If you continue, the recovery environment will be completely disabled.

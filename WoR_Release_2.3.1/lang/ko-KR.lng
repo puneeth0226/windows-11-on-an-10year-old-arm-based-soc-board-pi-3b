@@ -1,0 +1,171 @@
+﻿[WoR lang file]
+Name=한국어 (Korean)
+IsComplete=1
+
+[UpdateNotifyWindow]
+WindowTitle=업데이트
+NewVersionAvailableLabel=새로운 버전이 사용 가능합니다.
+NewVersionAvailableBox={appname} {0} 이 사용 가능합니다! 지금 다운로드 하시겠습니까?
+DownloadBtn=다운로드
+CloseBtn=닫기
+
+[AboutWindow]
+WindowTitle=정보
+AppVersionLabel=버젼
+CreditsPage=크레딧
+ChangelogPage=변경사항
+LicensesPage=라이선스
+
+[LoggerWindow]
+WindowTitle=로그
+CopyToClipboardBtn=복사
+
+[LicenseAgreementWindow]
+WindowTitle=라이선스 동의
+AcceptBtn=동의
+DeclineBtn=거절
+
+[General]
+MessageBox.CustomPackageWarn=오래되거나 호환되지 않는 패키지를 선택하는 것은 설치에 문제를 일으킬 수 있습니다!{n}{n}서버에서 사용 가능한 최신버젼을 사용하는 것을 권장합니다.{n}{n}계속하시겠습니까?
+MessageBox.SelectedPackageInvalid.Heading=선택한 패키지가 잘못되었거나 기기와 호환되지 않습니다.
+MessageBox.SelectedPackageInvalid.Message={0}용으로 제작된 패키지를 선택해 주세요.
+MessageBox.PackageUpdateError.Heading=패키지의 최신 버전을 다운로드할 수 없습니다!
+MessageBox.PackageUpdateError.Message=이 오류를 무시하면, 설치관리자는 오래된 로컬 버전으로 설치를 진행합니다.
+Message.ExtractingPackageToTemp=임시 폴더로 아카이브 추출...
+Message.DownloadingReqFiles=필요한 파일을 다운로드하는 중...
+Label.StorageDrive=저장 장치
+Label.DeviceType=장치 종류
+FilePathTextPlaceholder="{0}" 버튼을 누르거나 파일을 끌어다 놓으세요.
+ServerPackageInfoLabel=해당 옵션을 권장합니다. 이전에 이미 다운받은 패키지가 있다면 오프라인에서도 해당 옵션을 사용할 수 있습니다.
+
+[MessageBox]
+Button.OK=확인
+Button.Cancel=취소
+Button.Abort=중단
+Button.Retry=재시도
+Button.Ignore=무시
+Button.Yes=예
+Button.No=아니오
+CheckBox.DoNotShowAgain=다시 보지 않기
+
+[MessageBox.Common]
+Heading.SomethingWentWrong=오류가 발생했습니다.
+Heading.Warning=경고!
+
+[MainWindow]
+SendFeedbackBtn=피드백 보내기
+NextPageBtn=다음
+BackPageBtn=뒤로
+NextPageBtn.Install=설치
+NextPageBtn.Finish=마침
+MessageBox.TaskOngoing.Heading=정말 이 프로그램을 종료하시겠습니까?
+MessageBox.TaskOngoing.Message=작업이 진행중입니다.
+
+[WelcomePage]
+PageTitle=환영합니다
+WelcomeLabel={appname}에 오신 것을 환영합니다!
+WelcomeMsgTextBox=본 프로그램은 Raspberry Pi에 데스크탑 버전의 Windows을 쉽게 설치할 수 있도록 도와줍니다.{n}{n}{0} 버튼을 눌러 진행하세요.
+SelectLangLabel=언어를 선택:
+SelectWizardModeLabel=고급 옵션:
+SelectWizardModeCombo.BasicMode=필수 옵션만 보기
+SelectWizardModeCombo.AdvancedMode=모든 옵션 보기
+
+[SelectDevicePage]
+PageTitle=장치 선택
+SelectDeviceLabel=장치 선택
+DisksListCombo.TextEmptyList=장치를 발견하지 못했습니다. {0} 버튼을 눌러서 목록을 갱신하세요.
+DisksListCombo.TextNoItemSelected=여기를 클릭하여 목록에서 장치를 선택하세요.
+StorageDriveWarningLabel=경고! 잘못된 장치 선택은 원하지 않는 데이터 손실로 이어질 수 있습니다.
+Device.ExperimentalSupport=실험적 기능
+Device.SupportedModels=지원 모델: {0}
+MessageBox.DiskAtLeast=해당 장치에 적어도 {0} GB 이상의 여유 공간이 있어야 합니다.
+MessageBox.DiskCompressedInstall.Heading=선택한 장치에 압축 설치를 위한 충분한 공간이 있습니다.
+MessageBox.DiskCompressedInstall.Message=압축 과정 실행 시 시스템이 느려질 수 있습니다.
+Message.LoadingDisks=장치를 불러 오는 중...
+MessageBox.NewBootloaderRequiredWarn={0}를 USB 에서 부트 시키거나 GPT 파티셔닝을 원한다면, 해당 기기의 부트로더가 반드시 최신 버전으로 업데이트 되어야 합니다.{n}{n}더 자세한 정보는 아래 주소를 참조하세요: {1}
+
+[SelectImagePage]
+PageTitle=이미지 선택
+SelectImageLabel=Windows on ARM 이미지를 선택하세요
+ImageFileLabel=이미지 파일
+WindowsEditionLabel=윈도우 에디션
+WorkingBuildsTextBox.MinBuild=해당 기기는 Windows {0} 빌드 {1} 또는 더 최신 빌드를 지원합니다.
+WorkingBuildsTextBox.AllBuilds=해당 기기는 Windows {0}의 사용 가능한 모든 빌드를 지원합니다.
+WorkingBuildsTextBox.GetImage=만약 이미지 파일이 없다면, WoR 프로젝트 홈페이지에서 해당 파일을 다운로드 받는 방법을 찾을 수 있습니다.
+SelectImageIndexCombo.TextEmptyList=먼저 이미지 파일을 선택해 주세요.
+MessageBox.SelectedImageInvalid=선택한 이미지는 올바른 윈도우 이미지가 아닙니다!
+MessageBox.SelectedImageUnsupported=선택한 이미지는 지원되지 않습니다!
+MessageBox.SelectedImageErrorInfo.AllBuilds=호환되는 Windows {0} 이미지를 선택해 주세요.
+MessageBox.SelectedImageErrorInfo.MinBuild=호환되는 Windows {0} 빌드 {1} 또는 더 최신 빌드를 선택해 주세요.
+MessageBox.SelectedImageMountError.Heading=이미지를 마운트 할 수 없습니다!
+MessageBox.SelectedImageMountError.Message=이미지가 윈도우로부터 마운트 될 수 있는지 확인(오른쪽 클릭 -> 마운트)하고 재시도하세요. 네트워크 공유로 접근하는것은 작동하지 않을 수 있습니다.{n}{n}만약 계속 오류나지만 수동적으로 마운트 할 수 있는 경우, {1} 폴더 안에있는 {0} 파일을 직접 선택할 수 있습니다.
+MessageBox.NotEnoughSpace.Heading=선택한 디스크에 이 이미지를 설치하기 위한 공간이 부족합니다!
+MessageBox.NotEnoughSpace.Message=더 큰 저장장치를 선택하거나 작은 이미지를 선택해주세요!
+Message.MountingISO=Windows ARM ISO 이미지를 마운트 중...
+Message.UnmountingISO=ISO 이미지를 언마운트 하는 중...
+Message.VerifyingImage=이미지 검증하는 중...
+
+[SelectDriversPage]
+PageTitle=드라이버 선택
+SelectDriversLabel=드라이버를 선택 해주세요
+DriversNoteTextBox=참고: 드라이버 파일은 {0}(압축 파일)로 되어있어야 합니다.
+LocalDrvPkgRadioBtn=컴퓨터에 저장된 드라이버 패키지 사용하기
+ServerDrvPkgRadioBtn=서버에서 사용 가능한 최신 드라이버 패키지 사용하기
+MessageBox.LicenseNotAccepted.Heading=라이선스에 동의하지 않았습니다!
+MessageBox.LicenseNotAccepted.Message=이 드라이버 패키지를 사용하려면 모든 라이선스에 동의해야 합니다.
+
+[SelectUEFIPage]
+PageTitle=UEFI 펌웨어 선택
+SelectUEFILabel=UEFI 펌웨어를 선택해주세요!
+UEFINoteTextBox=참고: UEFI 펌웨어의 파일 확장명은 {0}이어야 합니다.
+LocalUEFIRadioBtn=컴퓨터에 저장된 UEFI 펌웨어 파일 사용하기
+ServerUEFIRadioBtn=서버에 저장된 최신 UEFI 펌웨어 파일 사용하기
+
+[SetupConfigurationPage]
+PageTitle=환경 설정(변수)
+ConfigurationLabel=환경 설정(변수)
+ConfigurationTabControl.MainTabPage=일반
+InstallOptionsGroup=설치 옵션
+PartSchemeLabel=파티션 방식:
+ImgInstallLabel=이미지 설치 방식:
+EnableLZXCheck=LZX 압축 방식으로 설치
+BootOptionsGroup=부트 옵션
+MessageBox.BootConfigEditorWarn=기본 부트설정을 수정하는것은 부팅 오류나 오작동을 일으킬 수 있습니다.{n}{n}계속하시겠습니까?
+MessageBox.MbrPartSchemeWarn=MBR 파티션 체계를 선택하는것은 복구 환경과 시스템 업데이트를 사용할 수 없습니다.{n}{n}계속하시겠습니까?
+ConfigurationTabControl.AdvancedTabPage=고급
+MessageBox.AdvancedTabPageWarn=고급 옵션에서 기본 설정을 수정하는 것은 특정 기능을 비활성화 하거나 시스템의 부팅을 막을 수 있습니다.{n}{n}그래도 계속 하시겠습니까?
+WindowsBootOptionsGroup=윈도우 부트 옵션 
+MemoryLimitLabel=메모리 제한:
+RecoveryEnabledCheck=윈도우 복구환경 활성화
+WoROptionsGroup={appname} 옵션
+SaveConfigOnExitCheck=종료할 때 지금 설정한 세팅을 저장
+SaveConfigOnExitCheckInfoLabel=참고: 비활성화 된 옵션들은 저장되지 않습니다.
+
+[SetupOverviewPage]
+PageTitle=설치
+InstallOverviewLabel=설치 과정
+InstallWarnBox=경고! 장치에 있는 모든 정보가 삭제됩니다! 늦기 전에 백업을 하시기 바랍니다!
+OSLabel=운영 체제
+DriversPathLabel=드라이버 경로
+UEFIPathLabel=UEFI 펌웨어 경로
+PartitionSchemeLabel=파티션 방식
+ImageDeployerLabel=이미지 설치 방식
+LZXCompressionLabel=LZX 압축 방식 설치
+LZXCompression.YES=네
+LZXCompression.NO=아니오
+
+[SetupProgressPage]
+PageTitle=설치
+InstallInfoBox=이 프로세스는 장치 성능에 따라 시간이 오래 걸릴 수 있습니다.
+TryAgainBtn=다시 시도
+InstallStatusLabel.GettingReady=잠시만 기다려주세요...
+InstallStatusLabel.FormattingDisk=장치를 포맷하는 중...
+InstallStatusLabel.CreatingPartitions=파티션을 만드는 중...
+InstallStatusLabel.InstallingWindows=Windows 설치 중...
+InstallStatusLabel.InstallingBootFiles=부트 파일 설치 중...
+InstallStatusLabel.InstallingDrivers=드라이버 설치 중...
+InstallStatusLabel.RunningScript=사용자 지정 스크립트 실행 중...
+InstallStatusLabel.InstallFinished=설치가 완료 되었습니다!
+InstallStatusLabel.InstallFailed=설치에 실패했습니다!
+MessageBox.RecoveryNotFoundWarn.Heading=복구 이미지를 찾을 수 없습니다!
+MessageBox.RecoveryNotFoundWarn.Message=계속하면 복구환경이 완전히 해제됩니다.

@@ -1,0 +1,3 @@
+mcci_dwchsotg\mcci_dwchsotg_hcd.inf
+mcci_dwchsotg\mcci_dwchsotg_hub.inf
+rpisdhc\rpisdhc.inf

@@ -1,0 +1,192 @@
+;*****************************************************************************
+;
+; Name:  mcci_dwchsotg_hub.inf
+;
+; Function:
+;	Install MCCI DWCHSOTG Hub Driver (Non-Commercial) 
+;
+; Copyright (c) 2009-2019 MCCI Corporation
+;
+; MCCI(R) is a registered trademark of MCCI Corporation.
+;
+; NOTICE: This software is licensed, not sold.  Any modification of this
+; inf file to change the reference to an operating system or to change the
+; reference to a device is not permitted unless authorized in writing by
+; MCCI Corporation
+;
+;*****************************************************************************
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=USB
+ClassGuid={36fc9e60-c465-11cf-8056-444553540000}
+Provider=%Provider%
+DriverVer=02/11/2019, 2.22.0.0
+CatalogFile=mcci_dwchsotg_hub.cat
+
+[SourceDisksNames.x86]
+1=%DiskKey%,"mcci_dwchsotg_hub.sys",,\i386
+
+[SourceDisksNames.amd64]
+1=%DiskKey%,"mcci_dwchsotg_hub.sys",,\amd64
+
+[SourceDisksNames.arm]
+1=%DiskKey%,"mcci_dwchsotg_hub.sys",,\arm
+
+[SourceDisksNames.arm64]
+1=%DiskKey%,"mcci_dwchsotg_hub.sys",,\arm64
+
+[SourceDisksFiles.x86]
+mcci_dwchsotg_hub.sys=1
+
+[SourceDisksFiles.amd64]
+mcci_dwchsotg_hub.sys=1
+
+[SourceDisksFiles.arm]
+mcci_dwchsotg_hub.sys=1
+
+[SourceDisksFiles.arm64]
+mcci_dwchsotg_hub.sys=1
+
+[DestinationDirs]
+DefaultDestDir = 12
+
+[ControlFlags]
+ExcludeFromSelect = *
+
+[Manufacturer]
+%Hub.MFG%=Hub, ntx86, ntamd64, ntarm, ntarm64
+%RootHub.MFG%=RootHub, ntx86, ntamd64, ntarm, ntarm64
+
+[Hub.ntamd64]
+%Hub_Product_2%=Hub_Product2_Install,USB\McciDwcHsOtgHub
+
+[Hub.ntarm]
+%Hub_Product_2%=Hub_Product2_Install,USB\McciDwcHsOtgHub
+
+[Hub.ntarm64]
+%Hub_Product_2%=Hub_Product2_Install,USB\McciDwcHsOtgHub
+
+[Hub.ntx86]
+%Hub_Product_2%=Hub_Product2_Install,USB\McciDwcHsOtgHub
+
+[Hub_Product2_Install.ntamd64]
+CopyFiles=mcci_dwchsotg_hub.CopyFiles.amd64
+DriverVer=02/11/2019, 2.22.0.0
+AddReg=mcci_dwchsotg_hub.DeviceInterfaceGuids
+AddReg=mcci_dwchsotg_hub.ProductDeviceInterfaceGuids
+
+[Hub_Product2_Install.ntamd64.services]
+AddService=mcci_dwchsotg_hub,0x00000002,mcci_dwchsotg_hub_service
+
+[Hub_Product2_Install.ntarm]
+CopyFiles=mcci_dwchsotg_hub.CopyFiles.arm
+DriverVer=02/11/2019, 2.22.0.0
+AddReg=mcci_dwchsotg_hub.DeviceInterfaceGuids
+AddReg=mcci_dwchsotg_hub.ProductDeviceInterfaceGuids
+
+[Hub_Product2_Install.ntarm.services]
+AddService=mcci_dwchsotg_hub,0x00000002,mcci_dwchsotg_hub_service
+
+[Hub_Product2_Install.ntarm64]
+CopyFiles=mcci_dwchsotg_hub.CopyFiles.arm64
+DriverVer=02/11/2019, 2.22.0.0
+AddReg=mcci_dwchsotg_hub.DeviceInterfaceGuids
+AddReg=mcci_dwchsotg_hub.ProductDeviceInterfaceGuids
+
+[Hub_Product2_Install.ntarm64.services]
+AddService=mcci_dwchsotg_hub,0x00000002,mcci_dwchsotg_hub_service
+
+[Hub_Product2_Install.ntx86]
+CopyFiles=mcci_dwchsotg_hub.CopyFiles.x86
+DriverVer=02/11/2019, 2.22.0.0
+AddReg=mcci_dwchsotg_hub.DeviceInterfaceGuids
+AddReg=mcci_dwchsotg_hub.ProductDeviceInterfaceGuids
+
+[Hub_Product2_Install.ntx86.services]
+AddService=mcci_dwchsotg_hub,0x00000002,mcci_dwchsotg_hub_service
+
+[RootHub.ntamd64]
+%RootHub_Product_1%=RootHub_Product1_Install,USB\McciDwcHsOtgHub&VID_040E&PID_0100
+
+[RootHub.ntarm]
+%RootHub_Product_1%=RootHub_Product1_Install,USB\McciDwcHsOtgHub&VID_040E&PID_0100
+
+[RootHub.ntarm64]
+%RootHub_Product_1%=RootHub_Product1_Install,USB\McciDwcHsOtgHub&VID_040E&PID_0100
+
+[RootHub.ntx86]
+%RootHub_Product_1%=RootHub_Product1_Install,USB\McciDwcHsOtgHub&VID_040E&PID_0100
+
+[RootHub_Product1_Install.ntamd64]
+CopyFiles=mcci_dwchsotg_hub.CopyFiles.amd64
+DriverVer=02/11/2019, 2.22.0.0
+AddReg=mcci_dwchsotg_hub.DeviceInterfaceGuids
+AddReg=mcci_dwchsotg_hub.ProductDeviceInterfaceGuids
+
+[RootHub_Product1_Install.ntamd64.services]
+AddService=mcci_dwchsotg_hub,0x00000002,mcci_dwchsotg_hub_service
+
+[RootHub_Product1_Install.ntarm]
+CopyFiles=mcci_dwchsotg_hub.CopyFiles.arm
+DriverVer=02/11/2019, 2.22.0.0
+AddReg=mcci_dwchsotg_hub.DeviceInterfaceGuids
+AddReg=mcci_dwchsotg_hub.ProductDeviceInterfaceGuids
+
+[RootHub_Product1_Install.ntarm.services]
+AddService=mcci_dwchsotg_hub,0x00000002,mcci_dwchsotg_hub_service
+
+[RootHub_Product1_Install.ntarm64]
+CopyFiles=mcci_dwchsotg_hub.CopyFiles.arm64
+DriverVer=02/11/2019, 2.22.0.0
+AddReg=mcci_dwchsotg_hub.DeviceInterfaceGuids
+AddReg=mcci_dwchsotg_hub.ProductDeviceInterfaceGuids
+
+[RootHub_Product1_Install.ntarm64.services]
+AddService=mcci_dwchsotg_hub,0x00000002,mcci_dwchsotg_hub_service
+
+[RootHub_Product1_Install.ntx86]
+CopyFiles=mcci_dwchsotg_hub.CopyFiles.x86
+DriverVer=02/11/2019, 2.22.0.0
+AddReg=mcci_dwchsotg_hub.DeviceInterfaceGuids
+AddReg=mcci_dwchsotg_hub.ProductDeviceInterfaceGuids
+
+[RootHub_Product1_Install.ntx86.services]
+AddService=mcci_dwchsotg_hub,0x00000002,mcci_dwchsotg_hub_service
+
+[mcci_dwchsotg_hub.CopyFiles.amd64]
+mcci_dwchsotg_hub.sys
+
+[mcci_dwchsotg_hub.CopyFiles.arm]
+mcci_dwchsotg_hub.sys
+
+[mcci_dwchsotg_hub.CopyFiles.arm64]
+mcci_dwchsotg_hub.sys
+
+[mcci_dwchsotg_hub.CopyFiles.x86]
+mcci_dwchsotg_hub.sys
+
+[mcci_dwchsotg_hub.DeviceInterfaceGuids]
+HKR,DeviceInterfaces,GUID_DEVINTERFACE_DWCHSOTG_HUB,, "{A12EB98C-81EF-42D8-9B3A-B0574DC0C820}"
+
+[mcci_dwchsotg_hub.ProductDeviceInterfaceGuids]
+HKR,DeviceInterfaces,GUID_DEVINTERFACE_DWCHSOTG_DRIVERS,, "{44B0BF3C-435E-4869-9CE7-E4DC46E44873}"
+
+[mcci_dwchsotg_hub_service]
+DisplayName=%mcci_dwchsotg_hub_ServiceDescription%
+ServiceType=1
+StartType=0
+ErrorControl=1
+ServiceBinary=%12%\mcci_dwchsotg_hub.sys
+LoadOrderGroup=Base
+
+[Strings]
+DiskKey = "MCCI DWCHSOTG Install Disk"
+Hub.MFG = "(Generic USB Hub)"
+Hub_Product_2 = "Generic USB Hub"
+Provider = "MCCI Corporation"
+RootHub.MFG = "(Standard USB Host Controller)"
+RootHub_Product_1 = "MCCI DWCHSOTG USB Root Hub (Non-Commercial)"
+mcci_dwchsotg_hub_ServiceDescription = "MCCI DWCHSOTG Hub Service"
+
+;**** end of file ****

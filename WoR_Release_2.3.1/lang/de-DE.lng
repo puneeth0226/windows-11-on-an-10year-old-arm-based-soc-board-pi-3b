@@ -1,0 +1,171 @@
+﻿[WoR lang file]
+Name=Deutsch (German)
+IsComplete=0
+
+[UpdateNotifyWindow]
+WindowTitle=Update
+NewVersionAvailableLabel=Neue Version verfügbar
+NewVersionAvailableBox={appname} {0} ist verfügbar! Möchten Sie es jetzt herunterladen?
+DownloadBtn=Download
+CloseBtn=Schließen
+
+[AboutWindow]
+WindowTitle=Über
+AppVersionLabel=Version
+CreditsPage=Mitwirkende
+ChangelogPage=Changelog
+LicensesPage=Lizenz
+
+[LoggerWindow]
+WindowTitle=Logdatei
+CopyToClipboardBtn=Kopieren
+
+[LicenseAgreementWindow]
+WindowTitle=Lizenzabkommen
+AcceptBtn=Akzeptieren
+DeclineBtn=Ablehnen
+
+[General]
+MessageBox.CustomPackageWarn=Die Auswahl eines veralteten oder inkompatiblen Paketes kann Probleme bei der Installation verursachen!{n}{n}Es wird empfohlen, die neueste verfügbare Version auf dem Server zu verwenden.{n}{n}Dennoch fortfahren?
+MessageBox.SelectedPackageInvalid.Heading=Das ausgewählte Paket ist ungültig oder nicht mit Ihrem Gerät kompatibel.
+MessageBox.SelectedPackageInvalid.Message=Bitte wählen Sie ein für {0} erstelltes Paket.
+MessageBox.PackageUpdateError.Heading=Die neueste Version des Pakets konnte nicht heruntergeladen werden!
+MessageBox.PackageUpdateError.Message=Wenn Sie diesen Fehler ignorieren, wird das Setup mit der lokalen Version fortgesetzt, die möglicherweise veraltet ist. 
+Message.ExtractingPackageToTemp=Das Archiv wird in das temporäre Verzeichnis entpackt...
+Message.DownloadingReqFiles=Erforderliche Dateien werden heruntergeladen...
+Label.StorageDrive=Speicherlaufwerk
+Label.DeviceType=Gerätetyp
+FilePathTextPlaceholder=Klicken Sie auf die Schaltfläche "{0}" oder ziehen Sie die Datei per Drag & Drop hierher.
+ServerPackageInfoLabel=Dies ist die empfohlene Option. Es kann auch offline verwendet werden, solange das Paket zuvor heruntergeladen wurde.
+
+[MessageBox]
+Button.OK=OK
+Button.Cancel=Stornieren
+Button.Abort=Abbrechen
+Button.Retry=Wiederholen
+Button.Ignore=Ignorieren
+Button.Yes=Ja
+Button.No=Nein
+CheckBox.DoNotShowAgain=Nicht wieder anzeigen
+
+[MessageBox.Common]
+Heading.SomethingWentWrong=Etwas ist schief gelaufen...
+Heading.Warning=Warnung!
+
+[MainWindow]
+SendFeedbackBtn=Feedback senden
+NextPageBtn=Weiter
+BackPageBtn=Zurück
+NextPageBtn.Install=Installieren
+NextPageBtn.Finish=Fertigstellen
+MessageBox.TaskOngoing.Heading=Möchten Sie das Schließen der Anwendung wirklich erzwingen?
+MessageBox.TaskOngoing.Message=Es wird gerade ein Vorgang ausgeführt.
+
+[WelcomePage]
+PageTitle=Willkommen
+WelcomeLabel=Willkommen bei {appname}!
+WelcomeMsgTextBox=Mit diesem Assistenten können Sie problemlos die vollständige Desktop-Version von Windows auf Ihrem Raspberry Pi-Computer installieren.{n}{n}Klicken Sie auf die Schaltfläche {0}, um fortzufahren.
+SelectLangLabel=Sprache auswählen:
+SelectWizardModeLabel=Wizard mode:
+SelectWizardModeCombo.BasicMode=Show only the required options
+SelectWizardModeCombo.AdvancedMode=Show all the options
+
+[SelectDevicePage]
+PageTitle=Datenträger wählen
+SelectDeviceLabel=Wählen Sie den Datenträger aus
+DisksListCombo.TextEmptyList=Es wurden keine Laufwerke gefunden. Klicken Sie auf die Schaltfläche {0}, um die Liste neu zu laden.
+DisksListCombo.TextNoItemSelected=Klicken Sie hier, um ein Laufwerk aus der Liste auszuwählen.
+StorageDriveWarningLabel=Warnung! Die Auswahl des falschen Laufwerks kann zu unerwünschten Datenverlusten führen.
+Device.ExperimentalSupport=Experimentell
+Device.SupportedModels=Unterstützte Modelle: {0}
+MessageBox.DiskAtLeast=Der Datenträger muss mindestens {0} GB freien Speicher haben!
+MessageBox.DiskCompressedInstall.Heading=Der gewählte Datenträger hat genug Speicher für eine gepackte Installation.
+MessageBox.DiskCompressedInstall.Message=Die Systemleistung kann aufgrund der Komprimierung leicht beeinträchtigt sein.
+Message.LoadingDisks=Treiber werden geladen...
+MessageBox.NewBootloaderRequiredWarn=Wenn Sie Ihre {0} von einem USB-Laufwerk booten oder das GPT-Partitionierungsschema verwenden möchten, muss der Bootloader auf die neueste Version aktualisiert werden.{n}{n}Weitere Informationen finden Sie unter folgendem Link: {1}
+
+[SelectImagePage]
+PageTitle=Abbilddatei wählen
+SelectImageLabel=Wählen Sie Ihre Windows on ARM-Abbilddatei
+ImageFileLabel=Bilddatei
+WindowsEditionLabel=Windows Edition
+WorkingBuildsTextBox.MinBuild=Ihr Gerät unterstützt Windows {0} Build {1} oder neuer.
+WorkingBuildsTextBox.AllBuilds=Ihr Gerät unterstützt alle verfügbaren Builds von Windows {0}.
+WorkingBuildsTextBox.GetImage=Wenn Sie noch kein Bild haben, finden Sie Details zum Herunterladen eines auf der Projektwebsite.
+SelectImageIndexCombo.TextEmptyList=Bitte wählen Sie zuerst ein Bild aus.
+MessageBox.SelectedImageInvalid=Die ausgewählte Datei ist kein gültiges Windows-Abbild!
+MessageBox.SelectedImageUnsupported=Das ausgewählte Abbild wird nicht unterstützt!
+MessageBox.SelectedImageErrorInfo.AllBuilds=Bitte wählen Sie ein kompatibles Windows {0} -Image.
+MessageBox.SelectedImageErrorInfo.MinBuild=Bitte wählen Sie ein kompatibles Windows {0} Build {1} oder ein neueres Image aus.
+MessageBox.SelectedImageMountError.Heading=Das Abblid konnte nicht bereitgestellt werden!
+MessageBox.SelectedImageMountError.Message=Stellen Sie sicher, dass das Abbild von Windows bereitgestellt werden kann (Rechtsklick -> Berreitstellen) und versuchen Sie es erneut. Der Zugriff über eine Netzwerkfreigabe funktioniert möglicherweise nicht.{n}{n}Wenn der Fehler weiterhin besteht, Sie das Image jedoch manuell bereitstellen können, können Sie die Datei {0} direkt aus dem darin enthaltenen Verzeichnis {1} auswählen. 
+MessageBox.NotEnoughSpace.Heading=Nicht genügend Speicher auf dem Datenträger vorhanden, um dieses Abbild zu installieren!
+MessageBox.NotEnoughSpace.Message=Bitte wählen Sie einen größeren Datenträger oder verwenden Sie ein kleineres Abbild.
+Message.MountingISO=ISO wird bereitgestellt...
+Message.UnmountingISO=ISO wird ausgeworfen...
+Message.VerifyingImage=Abbild wird verifiziert...
+
+[SelectDriversPage]
+PageTitle=Treiberpaket
+SelectDriversLabel=Treiber wählen
+DriversNoteTextBox=Hinweis: Die Treiber müssen im {0}-Dateiformat archiviert sein.
+LocalDrvPkgRadioBtn=Lokal gespeichertes Treiber-Paket verwenden
+ServerDrvPkgRadioBtn=Neustes Treiber-Paket vom Server herunterladen
+MessageBox.LicenseNotAccepted.Heading=Sie haben die Lizenzvereinbarung nicht akzeptiert!
+MessageBox.LicenseNotAccepted.Message=Alle Lizenzen müssen akzeptiert werden, um dieses Treiberpaket verwenden zu können.
+
+[SelectUEFIPage]
+PageTitle=UEFI-Firmware
+SelectUEFILabel=UEFI-Firmware wählen
+UEFINoteTextBox=Hinweis: UEFI-Firmware muss die Dateiendung {0} haben.
+LocalUEFIRadioBtn=Lokal gespeicherte Firmware verwenden
+ServerUEFIRadioBtn=Neuste Firmware vom Server herunterladen
+
+[SetupConfigurationPage]
+PageTitle=Konfiguration
+ConfigurationLabel=Konfiguration
+ConfigurationTabControl.MainTabPage=Allgemein
+InstallOptionsGroup=Installationsoptionen
+PartSchemeLabel=Partitionsschema:
+ImgInstallLabel=Installation mit:
+EnableLZXCheck=LZX-komprimierte Installation
+BootOptionsGroup=Startoptionen
+MessageBox.BootConfigEditorWarn=Das Verändern der Standard-Boot-Konfiguration kann dazu führen, dass das Gerät nicht korrekt funktioniert oder überhaupt nicht bootet.{n}{n}Dennoch fortfahren?
+MessageBox.MbrPartSchemeWarn=Wenn Sie das MBR-Partitionierungsschema wählen, können Sie die Wiederherstellungsumgebung nicht verwenden und Systemaktualisierungen durchführen.{n}{n}Trotzdem fortfahren?
+ConfigurationTabControl.AdvancedTabPage=Erweitert
+MessageBox.AdvancedTabPageWarn=Das Verändern der Standard-Einstellungen im Menü >Erweitert< kann bestimmte Features des Geräts deaktivieren oder verhindern, dass das Gerät bootet.{n}{n}Möchten Sie sicher fortfahren?
+WindowsBootOptionsGroup=Windows Boot Optionen
+MemoryLimitLabel=Speicherlimit:
+RecoveryEnabledCheck=Aktivieren der Windows Recovery Environment
+WoROptionsGroup={appname}-Optionen
+SaveConfigOnExitCheck=Diese Konfiguration beim Beenden speichern
+SaveConfigOnExitCheckInfoLabel=Hinweis: Deaktivierte Optionen werden nicht gespeichert!
+
+[SetupOverviewPage]
+PageTitle=Installation
+InstallOverviewLabel=Installationsübersicht
+InstallWarnBox=Warnung! Alle Daten auf dem Datenträger werden gelöscht! Erstellen Sie vorher eine Sicherung!
+OSLabel=Betriebssystem
+DriversPathLabel=Treiberpfad
+UEFIPathLabel=UEFI-Firmware-Pfad
+PartitionSchemeLabel=Partitionsschema
+ImageDeployerLabel=Abbildschreiber
+LZXCompressionLabel=LZX-Kompression
+LZXCompression.YES=JA
+LZXCompression.NO=NEIN
+
+[SetupProgressPage]
+PageTitle=Installation
+InstallInfoBox=Dieser Prozess kann je nach Geschwindigkeit des Datenträgers eine lange Zeit dauern.
+TryAgainBtn=Versuch es noch einmal
+InstallStatusLabel.GettingReady=Vorbereiten...
+InstallStatusLabel.FormattingDisk=Zieldatenträger wird formatiert...
+InstallStatusLabel.CreatingPartitions=Partitionen werden erstellt...
+InstallStatusLabel.InstallingWindows=Windows wird installiert...
+InstallStatusLabel.InstallingBootFiles=Startdateien werden installiert...
+InstallStatusLabel.InstallingDrivers=Treiber werden installiert...
+InstallStatusLabel.RunningScript=Running the custom script...
+InstallStatusLabel.InstallFinished=Die Installation wurde fertig gestellt!
+InstallStatusLabel.InstallFailed=Die Installation schlug fehl!
+MessageBox.RecoveryNotFoundWarn.Heading=Das Abbild zur Wiederherstellung konnte nicht gefunden werden!
+MessageBox.RecoveryNotFoundWarn.Message=Wenn Sie fortfahren, wird die Wiederherstellungsumgebung vollständig deaktiviert.
